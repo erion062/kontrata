@@ -3,131 +3,256 @@
 import { useState, useRef } from "react";
 import SignatureCanvas from "react-signature-canvas";
 
-const CONTRACT_PAGE_1 = `MARRËVESHJE BASHKËPUNIMI
-(Partnership & Grant Collaboration Agreement)
-
-Kjo marrëveshje lidhet dhe hyn në fuqi në datën e nënshkrimit ndërmjet palëve të mëposhtme:
+const CONTRACT_PAGE_1 = `MARRËVESHJE SHËRBIMI DHE NDAREJE TË TË ARDHURAVE
+(Service & Revenue Sharing Agreement)
 
 --------------------------------------------------
 
-Neni 1 – Palët Kontraktuese
+Neni 1 – Pala Kontraktuese
 
 Kjo marrëveshje lidhet ndërmjet:
 
-1. Convex SHPK, person juridik i regjistruar sipas legjislacionit në fuqi, i përfaqësuar nga Erion Ahmeti, në vijim "Convex"
+Festim Bunjaku, pronar dhe operator i aplikacionit "Trimmer" (në vijim "Klienti")
 
 dhe
 
-2. Nura Legacy, e përfaqësuar nga Bledar Gjata, në vijim "Nura"
+Convex SHPK, person juridik i regjistruar sipas legjislacionit në fuqi në Republikën e Kosovës, i përfaqësuar nga Erion Ahmeti (në vijim "Ofruesi i Shërbimit")
 
-Në vijim të përbashkëta si "Palët".
-
---------------------------------------------------
-
-Neni 2 – Baza Ligjore
-
-Kjo marrëveshje rregullohet dhe interpretohet në përputhje me:
-
-- Ligjet në fuqi të Republikës së Shqipërisë
-- Ligjet në fuqi të Republikës së Kosovës
-
-Në rast mospërputhjeje, zbatohet juridiksioni i përcaktuar në Nenin 11.
+Klienti dhe Ofruesi i Shërbimit në vijim referohen si "Palët".
 
 --------------------------------------------------
 
-Neni 3 – Qëllimi i Marrëveshjes
+Neni 2 – Pranimi i Marrëveshjes
 
-Qëllimi i kësaj marrëveshjeje është bashkëpunimi ndërmjet palëve për:
+Kjo marrëveshje konsiderohet e pranuar dhe hyn në fuqi në momentin që Klienti:
 
-- Zhvillimin dhe shkallëzimin e projektit Nura AI
-- Krijimin e partneriteteve strategjike
-- Ndërtimin e ekipit operacional
-- Aplikimin dhe përfitimin e granteve
+– e pranon në mënyrë elektronike (online)
+– ose fillon bashkëpunimin me Ofruesin e Shërbimit
 
 --------------------------------------------------
 
-Neni 4 – Detyrimet e Convex
+Neni 3 – Qëllimi
 
-Convex merr përsipër:
+Qëllimi i kësaj marrëveshjeje është ofrimi i shërbimeve të:
 
-- Krijimin e partneriteteve strategjike
-- Ndërtimin dhe menaxhimin e ekipit
-- Strategjinë për scaling
-- Mbështetje operative dhe këshillimore
+– lead generation
+– marketing dhe outreach
+– strategji rritjeje dhe scaling
 
---------------------------------------------------
-
-Neni 5 – Detyrimet e Nura
-
-Nura merr përsipër:
-
-- Zhvillimin e projektit Nura AI
-- Aplikimin në grante
-- Transparencë të plotë financiare
-- Bashkëpunim aktiv me Convex
+me synim rritjen e klientëve dhe të ardhurave të aplikacionit "Trimmer".
 
 --------------------------------------------------
 
-Neni 6 – Kompensimi dhe Pagesat
+Neni 4 – Shërbimet
 
-- Convex përfiton 10% të çdo granti
-- Pagesa bëhet brenda 7 ditëve
-- Penalitet: 5% në javë për vonesa
+Ofruesi i Shërbimit angazhohet të ofrojë:
 
---------------------------------------------------
+– gjenerim klientësh potencial (leads)
+– ndërtim strategjie shitjeje
+– optimizim të proceseve të konvertimit
+– mbështetje operative dhe këshillimore
 
-Neni 7 – Transparenca dhe Auditimi
-
-- Nura duhet të raportojë çdo grant
-- Convex ka të drejtë auditimi
+Ofruesi nuk garanton rezultate fikse numerike.
 
 --------------------------------------------------
 
-Neni 8 – Konfidencialiteti
+Neni 5 – Detyrimet e Klientit
 
-- Të gjitha informacionet janë konfidenciale
-- Detyrimi vazhdon 2 vite pas përfundimit
+Klienti bie dakord që:
 
---------------------------------------------------
-
-Neni 9 – Kohëzgjatja
-
-- Marrëveshja është pa afat
-- Deri në ndërprerje nga palët
+– të bashkëpunojë në mënyrë aktive
+– të mos pengojë procesin e shitjes
+– të raportojë saktë çdo klient të ardhur nga Ofruesi
+– të mos fshehë të ardhura apo marrëveshje
 
 --------------------------------------------------
 
-Neni 10 – Ndërprerja
+Neni 6 – Pagesat
 
-- 30 ditë njoftim paraprak
-- Convex ruan të drejtën mbi grantet ekzistuese
+Klienti bie dakord për:
 
---------------------------------------------------
+– pagesë fikse prej 50€ në muaj
+– pagesë prej 30% të çdo të ardhure të gjeneruar nga klientët e siguruar nga Ofruesi i Shërbimit
 
-Neni 11 – Juridiksioni
+Pagesat:
 
-- Gjykata Themelore në Prishtinë
-- Ose marrëveshje tjetër me shkrim
-
---------------------------------------------------
-
-Neni 12 – Moskonkurrenca
-
-- Nura nuk përdor palë të treta pa leje
-- Convex ka rol ekskluziv në scaling
+– bëhen në fund të çdo muaji kalendarik
+– duhet të kryhen brenda 5 ditëve nga përfundimi i muajit
 
 --------------------------------------------------
 
-Neni 13 – Forca Madhore
+Neni 7 – Penalitetet
 
-- Përjashtime për raste të jashtëzakonshme
+Në rast vonese pagese:
+
+– aplikohet penalitet prej 5% në javë mbi shumën e papaguar
+– Ofruesi ka të drejtë të ndërpresë menjëherë shërbimet
 
 --------------------------------------------------
 
-Neni 14 – Dispozita të Fundit
+Neni 8 – Pronësia e Leads
 
-- Ndryshimet vetëm me shkrim
-- Nenet e tjera mbeten në fuqi
+Të gjithë lead-et dhe klientët e gjeneruar nga Ofruesi konsiderohen pronë komerciale e Ofruesit për qëllime financiare.
+
+Klienti bie dakord që:
+
+– nuk mund të anashkalojë Ofruesin në bashkëpunim me këta klientë
+– çdo të ardhur nga këta klientë i nënshtrohet automatikisht pagesës prej 30%
+
+Kjo e drejtë mbetet në fuqi për 24 muaj pas përfundimit të bashkëpunimit.
+
+Në rast shkeljeje:
+
+– Klienti detyrohet të paguajë 100% të vlerës së kontratës me klientin përkatës
+– plus çdo dëm financiar dhe ligjor
+
+--------------------------------------------------
+
+Neni 9 – Transparenca dhe Auditimi
+
+Ofruesi ka të drejtë të kërkojë verifikim të:
+
+– komunikimeve me klientët
+– kontratave
+– pagesave
+
+Klienti është i detyruar të bashkëpunojë plotësisht.
+
+--------------------------------------------------
+
+Neni 10 – Konfidencialiteti
+
+Palët bien dakord të ruajnë konfidencialitet për:
+
+– strategjitë
+– klientët
+– të dhënat e biznesit
+
+Ky detyrim vazhdon për 2 vite pas përfundimit të marrëveshjes.
+
+--------------------------------------------------
+
+Neni 11 – Moskonkurrenca
+
+Klienti nuk mund të angazhojë palë të treta për shërbime të njëjta pa miratim me shkrim nga Ofruesi gjatë kohëzgjatjes së kësaj marrëveshjeje.`;
+
+const CONTRACT_PAGE_2 = `--------------------------------------------------
+
+Neni 12 – Kohëzgjatja
+
+Kjo marrëveshje është e vlefshme për një periudhë të pacaktuar.
+
+--------------------------------------------------
+
+Neni 13 – Ndërprerja
+
+Çdo palë mund të ndërpresë marrëveshjen me 30 ditë njoftim paraprak.
+
+Të drejtat e Ofruesit mbi klientët e gjeneruar mbeten në fuqi edhe pas ndërprerjes.
+
+--------------------------------------------------
+
+Neni 14 – Forca Madhore
+
+Asnjë palë nuk mban përgjegjësi për moszbatim për shkak të:
+
+– fatkeqësive natyrore
+– luftës
+– vendimeve shtetërore
+
+--------------------------------------------------
+
+Neni 15 – Juridiksioni
+
+Çdo mosmarrëveshje zgjidhet fillimisht në mënyrë miqësore.
+
+Në rast dështimi:
+– juridiksioni kompetent është Gjykata Themelore në Prishtinë, Republika e Kosovës
+
+--------------------------------------------------
+
+Neni 16 – Dispozita të Fundit
+
+– Kjo marrëveshje përbën marrëveshjen e plotë ndërmjet palëve
+– Çdo ndryshim bëhet vetëm me marrëveshje të shkruar
+– Nëse një nen është i pavlefshëm, pjesa tjetër mbetet në fuqi
+
+--------------------------------------------------
+--------------------------------------------------
+
+SHTOJCA A – KUADRI I TRANSPARENCËS DHE BASHKËPUNIMIT
+
+Neni A1 – Transparenca e të Ardhurave
+
+Klienti angazhohet të deklarojë në mënyrë të saktë dhe të plotë çdo të ardhur të gjeneruar nga klientët e siguruar nga Ofruesi i Shërbimit.
+
+Në rast mospërputhjeje:
+
+– detyrimet financiare ndaj Ofruesit mbeten të plota dhe të pagueshme
+– palët angazhohen të zgjidhin situatën në mënyrë transparente dhe profesionale
+– në rast dëmi të provuar, mund të kërkohet kompensim proporcional
+
+--------------------------------------------------
+
+Neni A2 – Detyrimi i Pagesës
+
+Detyrimi për pagesë lind automatikisht në momentin kur realizohen të ardhura nga klientët e siguruar nga Ofruesi i Shërbimit.
+
+Pagesa konsiderohet detyrim kontraktual i drejtpërdrejtë dhe nuk kërkon procedura shtesë për aktivizim.
+
+--------------------------------------------------
+
+Neni A3 – Verifikimi dhe Bashkëpunimi
+
+Ofruesi ka të drejtë të kërkojë verifikim të arsyeshëm lidhur me:
+
+– klientët e gjeneruar
+– të ardhurat e lidhura me ta
+– informacionet përkatëse operative
+
+Klienti angazhohet të bashkëpunojë në mënyrë të hapur dhe në kohë.
+
+--------------------------------------------------
+
+SHTOJCA B – ANGAZHIM PERSONAL
+
+Neni B1 – Angazhimi Personal
+
+Klienti deklaron se merr përgjegjësi personale për respektimin e detyrimeve të kësaj marrëveshjeje.
+
+--------------------------------------------------
+
+Neni B2 – Përmbushja e Detyrimeve
+
+Në rast mospërmbushjeje nga struktura e biznesit, detyrimet mbeten të vlefshme dhe të zbatueshme ndaj personit përgjegjës.
+
+--------------------------------------------------
+
+Neni B3 – Karakteri i Angazhimit
+
+Ky angazhim është pjesë integrale e marrëveshjes dhe synon të sigurojë një bashkëpunim të qëndrueshëm dhe të besueshëm ndërmjet palëve.
+
+--------------------------------------------------
+
+Neni B4 – Fuqia Ligjore
+
+Ky angazhim ka të njëjtën fuqi ligjore si marrëveshja kryesore dhe zbatohet në përputhje me ligjin në fuqi.
+
+--------------------------------------------------
+
+Neni B5 – Vazhdimësia
+
+Ky angazhim mbetet në fuqi deri në përmbushjen e plotë të detyrimeve që rrjedhin nga kjo marrëveshje.
+
+--------------------------------------------------
+
+PRANIMI
+
+Duke pranuar këtë marrëveshje, Klienti konfirmon se:
+
+– ka lexuar dhe kuptuar kushtet
+– bie dakord me to
+– angazhohet për bashkëpunim korrekt dhe transparent
 
 --------------------------------------------------
 
@@ -138,187 +263,10 @@ Erion Ahmeti
 Nënshkrimi: _______________________
 Data: _______________________
 
-Për Nura Legacy
-Bledar Gjata
+Për Trimmer (Klient)
+Festim Bunjaku
 Nënshkrimi: _______________________
 Data: _______________________`;
-
-const CONTRACT_PAGE_2 = `--------------------------------------------------
---------------------------------------------------
-
-SHTOJCA A – MBROJTJA E CONVEX
-
-Neni A1 – Mosdeklarimi i granteve
-
-Në rast se Nura, në mënyrë të qëllimshme ose jo, nuk deklaron një grant të fituar ose fsheh të ardhura që burojnë nga grantet:
-
-- Detyrohet të paguajë menjëherë Convex shumën e papaguar
-- Plus penalitet prej 3 (tre) herë vlerës së detyrimit të papaguar
-- Plus çdo dëm financiar, reputacional apo operacional të shkaktuar ndaj Convex
-
-Ky detyrim konsiderohet detyrim i menjëhershëm dhe i padiskutueshëm.
-
---------------------------------------------------
-
-Neni A2 – Pagesa Automatike dhe Detyrimi i Menjëhershëm
-
-- 10% e Convex konsiderohet detyrim i lindur automatikisht në momentin e përfitimit të grantit
-- Nuk kërkohet faturë, njoftim apo kërkesë shtesë për pagesë
-- Çdo vonesë konsiderohet shkelje kontraktuale
-
---------------------------------------------------
-
-Neni A3 – E Drejta e Monitorimit dhe Verifikimit
-
-Convex ka të drejtë të plotë për:
-
-- Verifikimin e çdo aplikimi për grant
-- Akses në dokumentacionin përkatës
-- Akses në komunikime relevante (email, platforma grantesh, etj.)
-
-Refuzimi për të ofruar këtë informacion konsiderohet shkelje e rëndë e marrëveshjes.
-
---------------------------------------------------
-
-Neni A4 – Klauzola Anti-Anashkalim (Non-Circumvention)
-
-Nura nuk ka të drejtë të:
-
-- Përdorë partnerët, kontaktet apo strategjitë e krijuara nga Convex
-- Aplikojë në grante apo të realizojë marrëveshje pa përfshirjen e Convex
-
-Në rast shkeljeje:
-
-- Penalitet minimal: 10,000€  
-OSE  
-- 3 (tre) herë vlera e përfitimit të realizuar (cilado më e lartë)
-
---------------------------------------------------
-
-Neni A5 – E Drejta mbi Grantet e Gjeneruara
-
-- Çdo grant i aplikuar gjatë periudhës së bashkëpunimit konsiderohet rezultat i bashkëpunimit
-- Convex ruan të drejtën mbi 10% edhe nëse:
-  - Pagesa e grantit realizohet pas ndërprerjes së marrëveshjes
-  - Marrëveshja është përfunduar
-
---------------------------------------------------
-
-Neni A6 – Ndërprerja e Menjëhershme nga Convex
-
-Convex ka të drejtë të ndërpresë marrëveshjen menjëherë nëse:
-
-- Ka mungesë transparence
-- Ka vonesa në pagesa mbi 7 ditë
-- Ka dyshime të arsyeshme për mashtrim
-
-Pa asnjë detyrim ndaj Nura.
-
---------------------------------------------------
-
-Neni A7 – Shpenzimet Ligjore dhe Dëmshpërblimi
-
-Në çdo konflikt:
-
-- Pala që rezulton në shkelje mban përgjegjësi për:
-  - Të gjitha kostot ligjore
-  - Avokatët
-  - Procedurat gjyqësore
-  - Çdo dëm të shkaktuar
-
---------------------------------------------------
-
-Neni A8 – Ekzekutimi dhe Titulli Ekzekutiv
-
-- Kjo marrëveshje dhe shtojcat e saj përbëjnë titull ekzekutiv pas noterizimit
-- Lejojnë fillimin e menjëhershëm të procedurave përmbarimore pa nevojë për vendim gjyqësor të gjatë
-
---------------------------------------------------
-
-Neni A9 – Prioriteti i Shtojcës
-
-Në rast konflikti ndërmjet:
-
-- Marrëveshjes bazë  
-dhe  
-- Kësaj shtojce  
-
-Kjo shtojcë ka përparësi për çështjet që lidhen me mbrojtjen e Convex.
-
---------------------------------------------------
---------------------------------------------------
-
-SHTOJCA B – GARANCI PERSONALE
-
-Neni B1 – Deklarimi i Garancisë Personale
-
-Unë, Bledar Gjata, në cilësinë time si përfaqësues i Nura Legacy dhe si person fizik, deklaroj se:
-
-- Marr përgjegjësi personale, të plotë dhe të pakushtëzuar për çdo detyrim financiar ndaj Convex SHPK
-- Kjo përfshin:
-  - Pagesat e përqindjes së granteve
-  - Penalitetet
-  - Dëmet financiare dhe çdo detyrim tjetër që rrjedh nga kjo marrëveshje
-
---------------------------------------------------
-
-Neni B2 – Përgjegjësia e Drejtpërdrejtë
-
-Në rast se Nura Legacy:
-
-- Nuk kryen pagesat
-OSE
-- Shkel detyrimet kontraktuale
-
-Atëherë:
-
-- Convex ka të drejtë të kërkojë përmbushjen e detyrimeve direkt nga Bledar Gjata si person fizik
-
---------------------------------------------------
-
-Neni B3 – Karakteri i Garancisë
-
-Kjo garanci është:
-
-- E pakthyeshme
-- E pakushtëzuar
-- E zbatueshme menjëherë pa kushte shtesë
-
---------------------------------------------------
-
-Neni B4 – Fuqia dhe Zbatueshmëria Ligjore
-
-- Kjo garanci ka të njëjtën fuqi ligjore si marrëveshja kryesore
-- Është e zbatueshme në:
-  - Republikën e Kosovës
-  - Republikën e Shqipërisë
-
---------------------------------------------------
-
-Neni B5 – Ekzekutimi Noterial
-
-- Me noterizimin e kësaj marrëveshjeje:
-  - Kjo garanci bëhet titull ekzekutiv
-  - Lejon përmbarim të drejtpërdrejtë ndaj personit fizik pa procedura të gjata gjyqësore
-
---------------------------------------------------
-
-Neni B6 – Vazhdimësia e Garancisë
-
-- Kjo garanci mbetet në fuqi edhe pas:
-  - Ndërprerjes së marrëveshjes
-  - Përfundimit të bashkëpunimit
-- Deri në shlyerjen e plotë të çdo detyrimi ndaj Convex
-
---------------------------------------------------
-
-NËNSHKRIM SHTESË (GARANCI PERSONALE)
-
-Bledar Gjata (Person Fizik)
-Nënshkrimi: _______________________
-Data: _______________________
-
---------------------------------------------------`;
 
 export default function Home() {
   const [step, setStep] = useState<"contract" | "signatures" | "success">("contract");
@@ -400,9 +348,9 @@ export default function Home() {
                 </div>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-3 tracking-tight">
-                Marrëveshje Bashkëpunimi
+                Marrëveshje Shërbimi
               </h1>
-              <p className="text-xl text-slate-600 font-semibold">Convex SHPK × Nura Legacy</p>
+              <p className="text-xl text-slate-600 font-semibold">Convex SHPK × Trimmer</p>
               <div className="mt-4 flex items-center justify-center gap-2 text-sm text-slate-500 font-medium">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -517,16 +465,16 @@ export default function Home() {
                   <div className="bg-blue-600 text-white w-12 h-12 rounded-md flex items-center justify-center font-bold shadow-lg text-xl">
                     1
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-800 uppercase tracking-wide">Nura Legacy</h3>
+                  <h3 className="text-2xl font-bold text-slate-800 uppercase tracking-wide">Trimmer (Client)</h3>
                 </div>
                 <label className="block text-sm font-bold text-slate-700 mb-3 uppercase tracking-wide">
-                  Representative Name
+                  Client Name
                 </label>
                 <input
                   type="text"
                   value={nuraName}
                   onChange={(e) => setNuraName(e.target.value)}
-                  placeholder="Bledar Gjata"
+                  placeholder="Festim Bunjaku"
                   className="w-full px-5 py-3 border-2 border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all bg-white shadow-sm text-lg"
                 />
                 <label className="block text-sm font-bold text-slate-700 mt-6 mb-3 uppercase tracking-wide">
@@ -558,7 +506,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-slate-800 uppercase tracking-wide">Personal Guarantee</h3>
-                    <p className="text-sm text-amber-700 font-semibold mt-1">Bledar Gjata - Individual</p>
+                    <p className="text-sm text-amber-700 font-semibold mt-1">Festim Bunjaku - Individual</p>
                   </div>
                 </div>
                 <label className="block text-sm font-bold text-slate-700 mb-3 uppercase tracking-wide">
@@ -568,7 +516,7 @@ export default function Home() {
                   type="text"
                   value={nuraPersonalName}
                   onChange={(e) => setNuraPersonalName(e.target.value)}
-                  placeholder="Bledar Gjata"
+                  placeholder="Festim Bunjaku"
                   className="w-full px-5 py-3 border-2 border-amber-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all bg-white shadow-sm text-lg"
                 />
                 <label className="block text-sm font-bold text-slate-700 mt-6 mb-3 uppercase tracking-wide">
