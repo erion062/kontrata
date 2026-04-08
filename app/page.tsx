@@ -12,7 +12,7 @@ Neni 1 – Pala Kontraktuese
 
 Kjo marrëveshje lidhet ndërmjet:
 
-Festim Bunjaku, pronar dhe operator i aplikacionit "Trimmer" (në vijim "Klienti")
+Festim Bunjaku, pronar dhe operator i aplikacionit "Trimmr" (në vijim "Klienti")
 
 dhe
 
@@ -24,10 +24,7 @@ Klienti dhe Ofruesi i Shërbimit në vijim referohen si "Palët".
 
 Neni 2 – Pranimi i Marrëveshjes
 
-Kjo marrëveshje konsiderohet e pranuar dhe hyn në fuqi në momentin që Klienti:
-
-– e pranon në mënyrë elektronike (online)
-– ose fillon bashkëpunimin me Ofruesin e Shërbimit
+Kjo marrëveshje konsiderohet e pranuar dhe hyn në fuqi në momentin e nënshkrimit elektronik nga Klienti.
 
 --------------------------------------------------
 
@@ -39,7 +36,7 @@ Qëllimi i kësaj marrëveshjeje është ofrimi i shërbimeve të:
 – marketing dhe outreach
 – strategji rritjeje dhe scaling
 
-me synim rritjen e klientëve dhe të ardhurave të aplikacionit "Trimmer".
+me synim rritjen e klientëve dhe të ardhurave të aplikacionit "Trimmr".
 
 --------------------------------------------------
 
@@ -51,6 +48,18 @@ Ofruesi i Shërbimit angazhohet të ofrojë:
 – ndërtim strategjie shitjeje
 – optimizim të proceseve të konvertimit
 – mbështetje operative dhe këshillimore
+
+Raportimi javor i Ofruesit përfshin:
+(a) numrin e prospekteve të kontaktuara,
+(b) kanalin e kontaktit,
+(c) statusin e secilit prospekt,
+(d) takimet e caktuara dhe të mbajtura,
+(e) lead-et e kualifikuara,
+(f) klientët e konvertuar,
+(g) arsyet kryesore të refuzimit,
+(h) feedback-un e tregut dhe rekomandimet operative.
+
+Me “lead” nënkuptohet business client që bëhet paying subscriber. Numri minimal i prospekteve të kontaktuara është 50+ në muaj.
 
 Ofruesi nuk garanton rezultate fikse numerike.
 
@@ -72,7 +81,11 @@ Neni 6 – Pagesat
 Klienti bie dakord për:
 
 – pagesë fikse prej 50€ në muaj
-– pagesë prej 30% të çdo të ardhure të gjeneruar nga klientët e siguruar nga Ofruesi i Shërbimit
+– pagesë prej 30% të të ardhurave NETO nga abonimet që hyjnë në Trimmr (tarifa 14.99€ është tax inclusive)
+
+Pagesat e revenue share prej 30% bëhen në baza mujore për 12 muaj nga momenti kur klienti fillon të paguajë (jo gjatë trial).
+
+Ofruesi është në dijeni që Paddle nuk lejon payout pa arritur 100€ fitim; revenue share paguhet pas çdo payout nga Paddle dhe jo në momentin kur klientët e aplikacionit paguajnë.
 
 Pagesat:
 
@@ -149,6 +162,8 @@ Neni 13 – Ndërprerja
 Çdo palë mund të ndërpresë marrëveshjen me 30 ditë njoftim paraprak.
 
 Të drejtat e Ofruesit mbi klientët e gjeneruar mbeten në fuqi edhe pas ndërprerjes.
+
+Në rast mbylljeje të aplikacionit Trimmr, kjo marrëveshje përfundon automatikisht dhe çdo përgjegjësi financiare e Klientit ndaj Ofruesit shuhet.
 
 --------------------------------------------------
 
@@ -263,7 +278,7 @@ Erion Ahmeti
 Nënshkrimi: _______________________
 Data: _______________________
 
-Për Trimmer (Klient)
+Për Trimmr (Klient)
 Festim Bunjaku
 Nënshkrimi: _______________________
 Data: _______________________`;
@@ -350,7 +365,7 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-3 tracking-tight">
                 Marrëveshje Shërbimi
               </h1>
-              <p className="text-xl text-slate-600 font-semibold">Convex SHPK × Trimmer</p>
+              <p className="text-xl text-slate-600 font-semibold">Convex SHPK × Trimmr</p>
               <div className="mt-4 flex items-center justify-center gap-2 text-sm text-slate-500 font-medium">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -465,7 +480,7 @@ export default function Home() {
                   <div className="bg-blue-600 text-white w-12 h-12 rounded-md flex items-center justify-center font-bold shadow-lg text-xl">
                     1
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-800 uppercase tracking-wide">Trimmer (Client)</h3>
+                  <h3 className="text-2xl font-bold text-slate-800 uppercase tracking-wide">Trimmr (Client)</h3>
                 </div>
                 <label className="block text-sm font-bold text-slate-700 mb-3 uppercase tracking-wide">
                   Client Name

@@ -1,320 +1,330 @@
-MARRËVESHJE BASHKËPUNIMI
+# MARRËVESHJE SHËRBIMI DHE NDAREJE TË TË ARDHURAVE
 
-(Partnership & Grant Collaboration Agreement)
+*(Service & Revenue Sharing Agreement)*
 
-Neni 1 – Palët Kontraktuese
+---
+
+## Neni 1 – Pala Kontraktuese
 
 Kjo marrëveshje lidhet ndërmjet:
 
-1. Convex SHPK, person juridik i regjistruar sipas legjislacionit në fuqi, i përfaqësuar nga Erion Ahmeti, në vijim “Convex”
+**Festim Bunjaku**, shtetas i ____________, me numër identifikimi ____________, me adresë në ____________, pronar dhe operator i aplikacionit “Trimmr” (në vijim “Klienti”)
 
 dhe
 
-2. Nura Legacy, e përfaqësuar nga Bledar Gjata, në vijim “Nura”
+**Convex SHPK**, person juridik i regjistruar sipas legjislacionit në fuqi në Republikën e Kosovës, i përfaqësuar nga Erion Ahmeti (në vijim “Ofruesi i Shërbimit”)
 
-Në vijim të përbashkëta si “Palët”.
+Klienti dhe Ofruesi i Shërbimit në vijim referohen si “Palët”.
 
-Neni 2 – Baza Ligjore
+---
 
-Kjo marrëveshje rregullohet dhe interpretohet në përputhje me:
+## Neni 2 – Pranimi i Marrëveshjes
 
-Ligjet në fuqi të Republikës së Shqipërisë, përfshirë Kodin Civil dhe legjislacionin për shoqëritë tregtare
-Ligjet në fuqi të Republikës së Kosovës, përfshirë Ligjin për Marrëdhëniet e Detyrimeve dhe legjislacionin për bizneset
+Kjo marrëveshje konsiderohet e pranuar dhe hyn në fuqi në momentin e nënshkrimit elektronik nga Klienti.
 
-Në rast mospërputhjeje, do të zbatohet juridiksioni i përcaktuar në Nenin 11.
+---
 
-Neni 3 – Qëllimi i Marrëveshjes
+## Neni 3 – Qëllimi
 
-Qëllimi i kësaj marrëveshjeje është bashkëpunimi ndërmjet palëve për:
+Qëllimi i kësaj marrëveshjeje është ofrimi i shërbimeve të:
 
-Zhvillimin dhe shkallëzimin e projektit Nura AI
-Krijimin e partneriteteve strategjike
-Ndërtimin e ekipit operacional
-Aplikimin dhe përfitimin e granteve (financime)
-Neni 4 – Detyrimet e Convex
+– lead generation
+– marketing dhe outreach
+– strategji rritjeje dhe scaling
 
-Convex merr përsipër:
+me synim rritjen e klientëve dhe të ardhurave të aplikacionit “Trimmr”.
 
-Identifikimin dhe krijimin e partneriteteve strategjike
-Ndërtimin, organizimin dhe menaxhimin e ekipit për scaling
-Hartimin e strategjive të rritjes dhe zhvillimit
-Mbështetje operative dhe këshillimore për strukturën e projektit
-Angazhimin e burimeve njerëzore dhe profesionale
-Neni 5 – Detyrimet e Nura
+---
 
-Nura merr përsipër:
+## Neni 4 – Shërbimet
 
-Zhvillimin teknik dhe operativ të projektit Nura AI
-Menaxhimin e procesit të:
-Aplikimit për grante
-Përgatitjes së dokumentacionit
-Deklarimin e plotë dhe të saktë të çdo financimi të përfituar
-Bashkëpunimin aktiv me Convex në çdo fazë
-Neni 6 – Kompensimi dhe Pagesat
-Convex ka të drejtë të përfitojë 10% (dhjetë përqind) të çdo granti të përfituar nga Nura gjatë kohëzgjatjes së kësaj marrëveshjeje
-Kjo përqindje përfshin:
-Shpenzimet operative të ekipit të Convex
-Pagesën për shërbimet e ofruara nga Convex
-Pagesa duhet të kryhet brenda 7 (shtatë) ditëve kalendarike nga data e përfitimit të grantit
-Penalitete:
-Në rast vonese, aplikohet penalitet prej 5% në javë mbi shumën e papaguar
-Neni 7 – Transparenca dhe Auditimi
-Nura është e detyruar të:
-Njoftojë Convex për çdo aplikim dhe fitim granti
-Sigurojë dokumentacion mbështetës
-Convex ka të drejtë të kërkojë verifikim (auditim) të të dhënave financiare të lidhura me grantet
-Neni 8 – Konfidencialiteti
-Palët detyrohen të ruajnë konfidencialitetin për:
-Strategjitë
-Partnerët
-Dokumentacionin
-Ky detyrim vazhdon edhe pas përfundimit të marrëveshjes për një periudhë prej 2 vitesh
-Neni 9 – Kohëzgjatja
-Marrëveshja hyn në fuqi në datën e nënshkrimit
-Ka kohëzgjatje të pacaktuar, deri në ndërprerje nga palët
-Neni 10 – Ndërprerja
-Çdo palë mund të ndërpresë marrëveshjen me njoftim me shkrim 30 ditë paraprak
-Convex ruan të drejtën për:
-10% të çdo granti të miratuar nga aplikimet e iniciuara gjatë periudhës së bashkëpunimit, edhe pas ndërprerjes
-Neni 11 – Juridiksioni dhe Zgjidhja e Mosmarrëveshjeve
-Palët bien dakord që çdo mosmarrëveshje të zgjidhet fillimisht në mënyrë miqësore
+Ofruesi i Shërbimit angazhohet të ofrojë:
+
+– gjenerim klientësh potencial (leads)
+– ndërtim strategjie shitjeje
+– optimizim të proceseve të konvertimit
+– mbështetje operative dhe këshillimore
+
+Raportimi javor i Ofruesit përfshin:
+(a) numrin e prospekteve të kontaktuara,
+(b) kanalin e kontaktit,
+(c) statusin e secilit prospekt,
+(d) takimet e caktuara dhe të mbajtura,
+(e) lead-et e kualifikuara,
+(f) klientët e konvertuar,
+(g) arsyet kryesore të refuzimit,
+(h) feedback-un e tregut dhe rekomandimet operative.
+
+Me “lead” nënkuptohet business client që bëhet paying subscriber. Numri minimal i prospekteve të kontaktuara është 50+ në muaj.
+
+Ofruesi nuk garanton rezultate fikse numerike.
+
+---
+
+## Neni 5 – Detyrimet e Klientit
+
+Klienti bie dakord që:
+
+– të bashkëpunojë në mënyrë aktive
+– të mos pengojë procesin e shitjes
+– të raportojë saktë çdo klient të ardhur nga Ofruesi
+– të mos fshehë të ardhura apo marrëveshje
+
+---
+
+## Neni 6 – Pagesat
+
+Klienti bie dakord për:
+
+– pagesë fikse prej **50€ në muaj**
+– pagesë prej **30% të të ardhurave NETO nga abonimet që hyjnë në Trimmr** (tarifa 14.99€ është tax inclusive)
+
+Pagesat e revenue share prej 30% bëhen në baza mujore për **12 muaj** nga momenti kur klienti fillon të paguajë (jo gjatë trial).
+
+Ofruesi është në dijeni që Paddle nuk lejon payout pa arritur 100€ fitim; revenue share paguhet pas çdo payout nga Paddle dhe jo në momentin kur klientët e aplikacionit paguajnë.
+
+Pagesat:
+
+– bëhen në fund të çdo muaji kalendarik
+– duhet të kryhen brenda **5 ditëve** nga përfundimi i muajit
+
+---
+
+## Neni 7 – Penalitetet
+
+Në rast vonese pagese:
+
+– aplikohet penalitet prej **5% në javë** mbi shumën e papaguar
+– Ofruesi ka të drejtë të ndërpresë menjëherë shërbimet
+
+---
+
+## Neni 8 – Pronësia e Leads
+
+Të gjithë lead-et dhe klientët e gjeneruar nga Ofruesi konsiderohen pronë komerciale e Ofruesit për qëllime financiare.
+
+Klienti bie dakord që:
+
+– nuk mund të anashkalojë Ofruesin në bashkëpunim me këta klientë
+– çdo të ardhur nga këta klientë i nënshtrohet automatikisht pagesës prej **30%**
+
+Kjo e drejtë mbetet në fuqi për **24 muaj pas përfundimit të bashkëpunimit**.
+
+Në rast shkeljeje:
+
+– Klienti detyrohet të paguajë **100% të vlerës së kontratës me klientin përkatës**
+– plus çdo dëm financiar dhe ligjor
+
+---
+
+## Neni 9 – Transparenca dhe Auditimi
+
+Ofruesi ka të drejtë të kërkojë verifikim të:
+
+– komunikimeve me klientët
+– kontratave
+– pagesave
+
+Klienti është i detyruar të bashkëpunojë plotësisht.
+
+---
+
+## Neni 10 – Konfidencialiteti
+
+Palët bien dakord të ruajnë konfidencialitet për:
+
+– strategjitë
+– klientët
+– të dhënat e biznesit
+
+Ky detyrim vazhdon për **2 vite pas përfundimit të marrëveshjes**.
+
+---
+
+## Neni 11 – Moskonkurrenca
+
+Klienti nuk mund të angazhojë palë të treta për shërbime të njëjta pa miratim me shkrim nga Ofruesi gjatë kohëzgjatjes së kësaj marrëveshjeje.
+
+---
+
+## Neni 12 – Kohëzgjatja
+
+Kjo marrëveshje është e vlefshme për një periudhë të pacaktuar.
+
+---
+
+## Neni 13 – Ndërprerja
+
+Çdo palë mund të ndërpresë marrëveshjen me **30 ditë njoftim paraprak**.
+
+Të drejtat e Ofruesit mbi klientët e gjeneruar mbeten në fuqi edhe pas ndërprerjes.
+
+Në rast mbylljeje të aplikacionit Trimmr, kjo marrëveshje përfundon automatikisht dhe çdo përgjegjësi financiare e Klientit ndaj Ofruesit shuhet.
+
+---
+
+## Neni 14 – Forca Madhore
+
+Asnjë palë nuk mban përgjegjësi për moszbatim për shkak të:
+
+– fatkeqësive natyrore
+– luftës
+– vendimeve shtetërore
+
+---
+
+## Neni 15 – Juridiksioni
+
+Çdo mosmarrëveshje zgjidhet fillimisht në mënyrë miqësore.
+
 Në rast dështimi:
+– juridiksioni kompetent është **Gjykata Themelore në Prishtinë, Republika e Kosovës**
 
- Juridiksioni kompetent do të jetë:
+---
 
-Gjykata Themelore në Prishtinë, Republikë e Kosovës
-OSE
-Një juridiksion tjetër i dakorduar me shkrim nga palët
-Neni 12 – Moskonkurrenca
-Nura nuk mund të angazhojë palë të treta për shërbime të njëjta pa pëlqimin me shkrim të Convex
-Convex ka rol kryesor në partneritete dhe scaling gjatë kësaj marrëveshjeje
-Neni 13 – Forca Madhore
-Asnjë palë nuk mban përgjegjësi për moszbatim të detyrimeve për shkak të:
-Fatkeqësive natyrore
-Luftës
-Vendimeve shtetërore
-Palët duhet të njoftojnë njëra-tjetrën menjëherë
-Neni 14 – Dispozita të Fundit
-Çdo ndryshim bëhet vetëm me marrëveshje të shkruar
-Nëse një nen shpallet i pavlefshëm, pjesa tjetër mbetet në fuqi
+## Neni 16 – Dispozita të Fundit
 
-Neni 1 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 2 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 3 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 4 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 5 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 6 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 7 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 8 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 9 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 10 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 11 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 12 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 13 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 14 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 15 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 16 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 17 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 18 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 19 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 20 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 21 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë.
-Neni 22 – Dispozita Ligjore dhe Operative
-Kjo dispozitë përcakton në mënyrë të detajuar të drejtat dhe detyrimet e palëve në lidhje me
-bashkëpunimin strategjik, zhvillimin e projektit, përfitimin nga grantet, menaxhimin e burimeve dhe
-zbatimin e standardeve profesionale. Çdo shkelje e këtij neni konsiderohet shkelje materiale dhe i
-jep të drejtë palës së dëmtuar të kërkojë kompensim financiar, ndërprerje të menjëhershme të
-marrëveshjes dhe ndjekje ligjore. Në rast mosrespektimi, pala në shkelje detyrohet të kompensojë
-çdo dëm direkt dhe indirekt, përfshirë humbjet financiare, dëmtimin e reputacionit dhe kostot ligjore.
-Palët bien dakord që kjo marrëveshje të zbatohet në përputhje me ligjet e Republikës së Shqipërisë
-dhe Republikës së Kosovës dhe çdo konflikt të zgjidhet në juridiksionin e përcaktuar në këtë
-kontratë
+– Kjo marrëveshje përbën marrëveshjen e plotë ndërmjet palëve
+– Çdo ndryshim bëhet vetëm me marrëveshje të shkruar
+– Nëse një nen është i pavlefshëm, pjesa tjetër mbetet në fuqi
+
+---
+
+## Pranimi
+
+Duke pranuar këtë marrëveshje në mënyrë elektronike, Klienti deklaron se:
+
+– e ka lexuar dhe kuptuar plotësisht
+– bie dakord me të gjitha kushtet
+– pranon detyrimet financiare dhe ligjore të saj
+
+
+
+appendecis
+# SHTOJCA A – KUADRI I TRANSPARENCËS DHE BASHKËPUNIMIT
+
+---
+
+## Neni A1 – Transparenca e të Ardhurave
+
+Klienti angazhohet të deklarojë në mënyrë të saktë dhe të plotë çdo të ardhur të gjeneruar nga klientët e siguruar nga Ofruesi i Shërbimit.
+
+Në rast mospërputhjeje:
+
+– detyrimet financiare ndaj Ofruesit mbeten të plota dhe të pagueshme
+– palët angazhohen të zgjidhin situatën në mënyrë transparente dhe profesionale
+– në rast dëmi të provuar, mund të kërkohet kompensim proporcional
+
+---
+
+## Neni A2 – Detyrimi i Pagesës
+
+Detyrimi për pagesë lind automatikisht në momentin kur realizohen të ardhura nga klientët e siguruar nga Ofruesi i Shërbimit.
+
+Pagesa konsiderohet detyrim kontraktual i drejtpërdrejtë dhe nuk kërkon procedura shtesë për aktivizim.
+
+---
+
+## Neni A3 – Verifikimi dhe Bashkëpunimi
+
+Ofruesi ka të drejtë të kërkojë verifikim të arsyeshëm lidhur me:
+
+– klientët e gjeneruar
+– të ardhurat e lidhura me ta
+– informacionet përkatëse operative
+
+Klienti angazhohet të bashkëpunojë në mënyrë të hapur dhe në kohë.
+
+---
+
+## Neni A4 – Bashkëpunimi i Drejtë (Non-Circumvention)
+
+Palët bien dakord të veprojnë në mirëbesim dhe të mos anashkalojnë njëra-tjetrën në lidhje me klientët, kontaktet apo mundësitë e krijuara gjatë bashkëpunimit.
+
+Çdo bashkëpunim i tillë mbetet subjekt i kushteve financiare të kësaj marrëveshjeje.
+
+---
+
+## Neni A5 – Vlefshmëria e Klientëve të Gjeneruar
+
+Çdo klient i gjeneruar gjatë bashkëpunimit konsiderohet pjesë e marrëdhënies kontraktuale ndërmjet palëve.
+
+Të drejtat dhe detyrimet financiare që rrjedhin nga këta klientë vazhdojnë të zbatohen edhe pas përfundimit të bashkëpunimit, për një periudhë të arsyeshme kohore.
+
+---
+
+## Neni A6 – Ndërprerja për Shkaqe të Arsyeshme
+
+Ofruesi ka të drejtë të ndërpresë marrëveshjen në rast se:
+
+– ka mungesë bashkëpunimi
+– ka vonesa të përsëritura në pagesa
+– ekzistojnë mospërputhje të rëndësishme në raportim
+
+Ndërprerja bëhet në mënyrë profesionale dhe me njoftim paraprak kur është e mundur.
+
+---
+
+## Neni A7 – Kostot dhe Përgjegjësia
+
+Në rast mosmarrëveshjeje, palët angazhohen të zgjidhin çështjen fillimisht në mënyrë miqësore.
+
+Nëse kërkohet ndërhyrje ligjore, kostot mund të shpërndahen sipas vendimit përfundimtar të organit kompetent.
+
+---
+
+## Neni A8 – Zbatueshmëria
+
+Kjo marrëveshje dhe shtojcat e saj mund të formalizohen përmes noterizimit, duke rritur sigurinë dhe zbatueshmërinë ligjore të tyre.
+
+---
+
+## Neni A9 – Prioriteti i Shtojcës
+
+Kjo shtojcë shërben për të qartësuar dhe mbështetur marrëveshjen bazë.
+
+Në rast paqartësie, interpretimi bëhet në përputhje me frymën e bashkëpunimit dhe marrëveshjes kryesore.
+
+---
+
+# SHTOJCA B – ANGAZHIM PERSONAL
+
+---
+
+## Neni B1 – Angazhimi Personal
+
+Klienti deklaron se merr përgjegjësi personale për respektimin e detyrimeve të kësaj marrëveshjeje.
+
+---
+
+## Neni B2 – Përmbushja e Detyrimeve
+
+Në rast mospërmbushjeje nga struktura e biznesit, detyrimet mbeten të vlefshme dhe të zbatueshme ndaj personit përgjegjës.
+
+---
+
+## Neni B3 – Karakteri i Angazhimit
+
+Ky angazhim është pjesë integrale e marrëveshjes dhe synon të sigurojë një bashkëpunim të qëndrueshëm dhe të besueshëm ndërmjet palëve.
+
+---
+
+## Neni B4 – Fuqia Ligjore
+
+Ky angazhim ka të njëjtën fuqi ligjore si marrëveshja kryesore dhe zbatohet në përputhje me ligjin në fuqi.
+
+---
+
+## Neni B5 – Vazhdimësia
+
+Ky angazhim mbetet në fuqi deri në përmbushjen e plotë të detyrimeve që rrjedhin nga kjo marrëveshje.
+
+---
+
+## Pranimi
+
+Duke pranuar këtë marrëveshje, Klienti konfirmon se:
+
+– ka lexuar dhe kuptuar kushtet
+– bie dakord me to
+– angazhohet për bashkëpunim korrekt dhe transparent
