@@ -3,285 +3,347 @@
 import { useState, useRef } from "react";
 import SignatureCanvas from "react-signature-canvas";
 
-const CONTRACT_PAGE_1 = `MARRËVESHJE SHËRBIMI DHE NDAREJE TË TË ARDHURAVE
-(Service & Revenue Sharing Agreement)
+const CONTRACT_PAGE_1 = `SERVICE AND REVENUE SHARING AGREEMENT
 
 --------------------------------------------------
 
-Neni 1 – Pala Kontraktuese
+Article 1 – Contracting Parties
 
-Kjo marrëveshje lidhet ndërmjet:
+This agreement is entered into between:
 
-Festim Bunjaku, pronar dhe operator i aplikacionit "Trimmr" (në vijim "Klienti")
+Muhammed Rizwan Iqbal, citizen of ____________, with identification number ____________, residing at ____________, representative of the company "RINS.AI LLC", operator of the "RINS.AI" application (hereinafter referred to as the "Client")
 
-dhe
+and
 
-Convex SHPK, person juridik i regjistruar sipas legjislacionit në fuqi në Republikën e Kosovës, i përfaqësuar nga Erion Ahmeti (në vijim "Ofruesi i Shërbimit")
+Convex SHPK, a legal entity registered under the applicable laws of the Republic of Kosovo, represented by Erion Ahmeti (hereinafter referred to as the "Service Provider")
 
-Klienti dhe Ofruesi i Shërbimit në vijim referohen si "Palët".
-
---------------------------------------------------
-
-Neni 2 – Pranimi i Marrëveshjes
-
-Kjo marrëveshje konsiderohet e pranuar dhe hyn në fuqi në momentin e nënshkrimit elektronik nga Klienti.
+The Client and the Service Provider shall hereinafter be collectively referred to as the "Parties".
 
 --------------------------------------------------
 
-Neni 3 – Qëllimi
+Article 2 – Acceptance of the Agreement
 
-Qëllimi i kësaj marrëveshjeje është ofrimi i shërbimeve të:
+This agreement is considered accepted and enters into force upon electronic signature by the Client.
+
+--------------------------------------------------
+
+Article 3 – Purpose
+
+The purpose of this agreement is the provision of services including:
 
 – lead generation
-– marketing dhe outreach
-– strategji rritjeje dhe scaling
+– marketing and outreach
+– growth and scaling strategy
 
-me synim rritjen e klientëve dhe të ardhurave të aplikacionit "Trimmr".
-
---------------------------------------------------
-
-Neni 4 – Shërbimet
-
-Ofruesi i Shërbimit angazhohet të ofrojë:
-
-– gjenerim klientësh potencial (leads)
-– ndërtim strategjie shitjeje
-– optimizim të proceseve të konvertimit
-– mbështetje operative dhe këshillimore
-
-Raportimi javor i Ofruesit përfshin:
-(a) numrin e prospekteve të kontaktuara,
-(b) kanalin e kontaktit,
-(c) statusin e secilit prospekt,
-(d) takimet e caktuara dhe të mbajtura,
-(e) lead-et e kualifikuara,
-(f) klientët e konvertuar,
-(g) arsyet kryesore të refuzimit,
-(h) feedback-un e tregut dhe rekomandimet operative.
-
-Me “lead” nënkuptohet business client që bëhet paying subscriber. Numri minimal i prospekteve të kontaktuara është 50+ në muaj.
-
-Ofruesi nuk garanton rezultate fikse numerike.
+with the objective of increasing customers and revenue for the "RINS.AI" application.
 
 --------------------------------------------------
 
-Neni 5 – Detyrimet e Klientit
+Article 4 – Services
 
-Klienti bie dakord që:
+The Service Provider agrees to provide:
 
-– të bashkëpunojë në mënyrë aktive
-– të mos pengojë procesin e shitjes
-– të raportojë saktë çdo klient të ardhur nga Ofruesi
-– të mos fshehë të ardhura apo marrëveshje
+– generation of potential clients (leads)
+– sales strategy development
+– optimization of conversion processes
+– operational and advisory support
 
---------------------------------------------------
+Weekly reporting by the Service Provider includes:
+(a) number of prospects contacted,
+(b) contact channel,
+(c) status of each prospect,
+(d) scheduled and completed meetings,
+(e) qualified leads,
+(f) converted clients,
+(g) main reasons for rejection,
+(h) market feedback and operational recommendations.
 
-Neni 6 – Pagesat
+A "lead" is defined as a business client who becomes a paying subscriber. The minimum number of prospects contacted is 50+ per month.
 
-Klienti bie dakord për:
-
-– pagesë fikse prej 50€ në muaj
-– pagesë prej 30% të të ardhurave NETO nga abonimet që hyjnë në Trimmr (tarifa 14.99€ është tax inclusive)
-
-Pagesat e revenue share prej 30% bëhen në baza mujore për 12 muaj nga momenti kur klienti fillon të paguajë (jo gjatë trial).
-
-Ofruesi është në dijeni që Paddle nuk lejon payout pa arritur 100€ fitim; revenue share paguhet pas çdo payout nga Paddle dhe jo në momentin kur klientët e aplikacionit paguajnë.
-
-Pagesat:
-
-– bëhen në fund të çdo muaji kalendarik
-– duhet të kryhen brenda 5 ditëve nga përfundimi i muajit
+The Service Provider does not guarantee fixed numerical results.
 
 --------------------------------------------------
 
-Neni 7 – Penalitetet
+Article 5 – Client Obligations
 
-Në rast vonese pagese:
+The Client agrees to:
 
-– aplikohet penalitet prej 5% në javë mbi shumën e papaguar
-– Ofruesi ka të drejtë të ndërpresë menjëherë shërbimet
-
---------------------------------------------------
-
-Neni 8 – Pronësia e Leads
-
-Të gjithë lead-et dhe klientët e gjeneruar nga Ofruesi konsiderohen pronë komerciale e Ofruesit për qëllime financiare.
-
-Klienti bie dakord që:
-
-– nuk mund të anashkalojë Ofruesin në bashkëpunim me këta klientë
-– çdo të ardhur nga këta klientë i nënshtrohet automatikisht pagesës prej 30%
-
-Kjo e drejtë mbetet në fuqi për 24 muaj pas përfundimit të bashkëpunimit.
-
-Në rast shkeljeje:
-
-– Klienti detyrohet të paguajë 100% të vlerës së kontratës me klientin përkatës
-– plus çdo dëm financiar dhe ligjor
+– actively cooperate
+– not obstruct the sales process
+– accurately report every client generated by the Service Provider
+– not conceal revenue or agreements
 
 --------------------------------------------------
 
-Neni 9 – Transparenca dhe Auditimi
+Article 6 – Payments
 
-Ofruesi ka të drejtë të kërkojë verifikim të:
+The Client agrees to:
 
-– komunikimeve me klientët
-– kontratave
-– pagesave
+– a fixed payment of **€120 per month**
+– a payment of **30% of revenue from each client closed by the Service Provider**, for **12 months** from the client's first payment
 
-Klienti është i detyruar të bashkëpunojë plotësisht.
+Payments:
 
---------------------------------------------------
-
-Neni 10 – Konfidencialiteti
-
-Palët bien dakord të ruajnë konfidencialitet për:
-
-– strategjitë
-– klientët
-– të dhënat e biznesit
-
-Ky detyrim vazhdon për 2 vite pas përfundimit të marrëveshjes.
+– are made at the end of each calendar month
+– must be completed within **5 days** after the end of the month
 
 --------------------------------------------------
 
-Neni 11 – Moskonkurrenca
+Article 7 – Penalties
 
-Klienti nuk mund të angazhojë palë të treta për shërbime të njëjta pa miratim me shkrim nga Ofruesi gjatë kohëzgjatjes së kësaj marrëveshjeje.`;
+In case of late payment:
+
+– a penalty of **5% per week** is applied on the unpaid amount
+– the Service Provider has the right to immediately suspend services
+
+--------------------------------------------------
+
+Article 8 – Ownership of Leads
+
+All leads and clients generated by the Service Provider are considered the commercial property of the Service Provider for financial purposes.
+
+The Client agrees that:
+
+– they may not bypass the Service Provider in dealings with these clients
+– all revenue from such clients is automatically subject to the **30% payment**
+
+This right remains valid for **24 months after termination of the collaboration**.
+
+In case of violation:
+
+– the Client must pay **100% of the value of the contract with the respective client**
+– plus any financial and legal damages
+
+--------------------------------------------------
+
+Article 9 – Transparency and Audit
+
+The Service Provider has the right to request verification of:
+
+– communications with clients
+– contracts
+– payments
+
+The Client is obligated to fully cooperate.
+
+--------------------------------------------------
+
+Article 10 – Confidentiality
+
+The Parties agree to maintain confidentiality regarding:
+
+– strategies
+– clients
+– business data
+
+This obligation continues for **2 years after termination of the agreement**.
+
+--------------------------------------------------
+
+Article 11 – Non-Competition
+
+The Client may not engage third parties for similar services without written approval from the Service Provider during the term of this agreement.`;
 
 const CONTRACT_PAGE_2 = `--------------------------------------------------
 
-Neni 12 – Kohëzgjatja
+Article 12 – Duration
 
-Kjo marrëveshje është e vlefshme për një periudhë të pacaktuar.
-
---------------------------------------------------
-
-Neni 13 – Ndërprerja
-
-Çdo palë mund të ndërpresë marrëveshjen me 30 ditë njoftim paraprak.
-
-Të drejtat e Ofruesit mbi klientët e gjeneruar mbeten në fuqi edhe pas ndërprerjes.
-
-Në rast mbylljeje të aplikacionit Trimmr, kjo marrëveshje përfundon automatikisht dhe çdo përgjegjësi financiare e Klientit ndaj Ofruesit shuhet.
+This agreement is valid for an indefinite period.
 
 --------------------------------------------------
 
-Neni 14 – Forca Madhore
+Article 13 – Termination
 
-Asnjë palë nuk mban përgjegjësi për moszbatim për shkak të:
+Either party may terminate the agreement with **30 days prior notice**.
 
-– fatkeqësive natyrore
-– luftës
-– vendimeve shtetërore
+The Service Provider's rights over generated clients remain valid after termination.
 
---------------------------------------------------
-
-Neni 15 – Juridiksioni
-
-Çdo mosmarrëveshje zgjidhet fillimisht në mënyrë miqësore.
-
-Në rast dështimi:
-– juridiksioni kompetent është Gjykata Themelore në Prishtinë, Republika e Kosovës
+In the event of the closure of RINS.AI LLC, this agreement terminates automatically and any financial obligations of the Client toward the Service Provider are extinguished.
 
 --------------------------------------------------
 
-Neni 16 – Dispozita të Fundit
+Article 14 – Force Majeure
 
-– Kjo marrëveshje përbën marrëveshjen e plotë ndërmjet palëve
-– Çdo ndryshim bëhet vetëm me marrëveshje të shkruar
-– Nëse një nen është i pavlefshëm, pjesa tjetër mbetet në fuqi
+Neither party is liable for non-performance due to:
 
---------------------------------------------------
---------------------------------------------------
-
-SHTOJCA A – KUADRI I TRANSPARENCËS DHE BASHKËPUNIMIT
-
-Neni A1 – Transparenca e të Ardhurave
-
-Klienti angazhohet të deklarojë në mënyrë të saktë dhe të plotë çdo të ardhur të gjeneruar nga klientët e siguruar nga Ofruesi i Shërbimit.
-
-Në rast mospërputhjeje:
-
-– detyrimet financiare ndaj Ofruesit mbeten të plota dhe të pagueshme
-– palët angazhohen të zgjidhin situatën në mënyrë transparente dhe profesionale
-– në rast dëmi të provuar, mund të kërkohet kompensim proporcional
+– natural disasters
+– war
+– government decisions
 
 --------------------------------------------------
 
-Neni A2 – Detyrimi i Pagesës
+Article 15 – Jurisdiction
 
-Detyrimi për pagesë lind automatikisht në momentin kur realizohen të ardhura nga klientët e siguruar nga Ofruesi i Shërbimit.
+Any dispute shall first be resolved amicably.
 
-Pagesa konsiderohet detyrim kontraktual i drejtpërdrejtë dhe nuk kërkon procedura shtesë për aktivizim.
-
---------------------------------------------------
-
-Neni A3 – Verifikimi dhe Bashkëpunimi
-
-Ofruesi ka të drejtë të kërkojë verifikim të arsyeshëm lidhur me:
-
-– klientët e gjeneruar
-– të ardhurat e lidhura me ta
-– informacionet përkatëse operative
-
-Klienti angazhohet të bashkëpunojë në mënyrë të hapur dhe në kohë.
+In case of failure:
+– the competent jurisdiction is the **Basic Court in Pristina, Republic of Kosovo**
 
 --------------------------------------------------
 
-SHTOJCA B – ANGAZHIM PERSONAL
+Article 16 – Final Provisions
 
-Neni B1 – Angazhimi Personal
-
-Klienti deklaron se merr përgjegjësi personale për respektimin e detyrimeve të kësaj marrëveshjeje.
-
---------------------------------------------------
-
-Neni B2 – Përmbushja e Detyrimeve
-
-Në rast mospërmbushjeje nga struktura e biznesit, detyrimet mbeten të vlefshme dhe të zbatueshme ndaj personit përgjegjës.
+– This agreement constitutes the entire agreement between the Parties
+– Any amendments must be made in writing
+– If any provision is invalid, the remainder remains in force
 
 --------------------------------------------------
 
-Neni B3 – Karakteri i Angazhimit
+Acceptance
 
-Ky angazhim është pjesë integrale e marrëveshjes dhe synon të sigurojë një bashkëpunim të qëndrueshëm dhe të besueshëm ndërmjet palëve.
+By accepting this agreement electronically, the Client declares that:
 
---------------------------------------------------
-
-Neni B4 – Fuqia Ligjore
-
-Ky angazhim ka të njëjtën fuqi ligjore si marrëveshja kryesore dhe zbatohet në përputhje me ligjin në fuqi.
+– they have fully read and understood it
+– they agree to all terms
+– they accept its financial and legal obligations
 
 --------------------------------------------------
 
-Neni B5 – Vazhdimësia
-
-Ky angazhim mbetet në fuqi deri në përmbushjen e plotë të detyrimeve që rrjedhin nga kjo marrëveshje.
+APPENDICES
 
 --------------------------------------------------
 
-PRANIMI
-
-Duke pranuar këtë marrëveshje, Klienti konfirmon se:
-
-– ka lexuar dhe kuptuar kushtet
-– bie dakord me to
-– angazhohet për bashkëpunim korrekt dhe transparent
+APPENDIX A – TRANSPARENCY AND COOPERATION FRAMEWORK
 
 --------------------------------------------------
 
-NËNSHKRIMET
+Article A1 – Revenue Transparency
 
-Për Convex SHPK
+The Client undertakes to accurately and fully declare all revenue generated from clients provided by the Service Provider.
+
+In case of discrepancies:
+
+– financial obligations toward the Service Provider remain fully payable
+– the parties agree to resolve the situation transparently and professionally
+– in case of proven damage, proportional compensation may be required
+
+--------------------------------------------------
+
+Article A2 – Payment Obligation
+
+The obligation to pay arises automatically when revenue is generated from clients provided by the Service Provider.
+
+Payment is considered a direct contractual obligation and does not require additional procedures to be activated.
+
+--------------------------------------------------
+
+Article A3 – Verification and Cooperation
+
+The Service Provider has the right to request reasonable verification regarding:
+
+– generated clients
+– related revenues
+– relevant operational information
+
+The Client agrees to cooperate openly and in a timely manner.
+
+--------------------------------------------------
+
+Article A4 – Fair Cooperation (Non-Circumvention)
+
+The Parties agree to act in good faith and not to bypass one another regarding clients, contacts, or opportunities created during the collaboration.
+
+Any such cooperation remains subject to the financial terms of this agreement.
+
+--------------------------------------------------
+
+Article A5 – Validity of Generated Clients
+
+Any client generated during the collaboration is considered part of the contractual relationship between the Parties.
+
+The rights and financial obligations arising from such clients continue to apply after termination of the collaboration for a reasonable period.
+
+--------------------------------------------------
+
+Article A6 – Termination for Just Cause
+
+The Service Provider has the right to terminate the agreement in cases of:
+
+– lack of cooperation
+– repeated payment delays
+– significant reporting discrepancies
+
+Termination is carried out professionally and with prior notice when possible.
+
+--------------------------------------------------
+
+Article A7 – Costs and Liability
+
+In case of disputes, the Parties agree to first resolve the matter amicably.
+
+If legal intervention is required, costs may be allocated according to the final decision of the competent authority.
+
+--------------------------------------------------
+
+Article A8 – Enforceability
+
+This agreement and its appendices may be formalized through notarization, increasing legal security and enforceability.
+
+--------------------------------------------------
+
+Article A9 – Priority of the Appendix
+
+This appendix serves to clarify and support the main agreement.
+
+In case of ambiguity, interpretation shall be made in accordance with the spirit of cooperation and the main agreement.
+
+--------------------------------------------------
+
+APPENDIX B – PERSONAL UNDERTAKING
+
+--------------------------------------------------
+
+Article B1 – Personal Commitment
+
+The Client declares that they assume personal responsibility for fulfilling the obligations of this agreement.
+
+--------------------------------------------------
+
+Article B2 – Fulfillment of Obligations
+
+In case of non-performance by the business structure, the obligations remain valid and enforceable against the responsible individual.
+
+--------------------------------------------------
+
+Article B3 – Nature of Commitment
+
+This commitment is an integral part of the agreement and aims to ensure stable and trustworthy cooperation between the Parties.
+
+--------------------------------------------------
+
+Article B4 – Legal Force
+
+This commitment has the same legal force as the main agreement and is enforced in accordance with applicable law.
+
+--------------------------------------------------
+
+Article B5 – Continuity
+
+This commitment remains in force until full fulfillment of all obligations arising from this agreement.
+
+--------------------------------------------------
+
+Acceptance
+
+By accepting this agreement, the Client confirms that:
+
+– they have read and understood the terms
+– they agree to them
+– they commit to fair and transparent cooperation
+
+--------------------------------------------------
+
+SIGNATURES
+
+For Convex SHPK
 Erion Ahmeti
-Nënshkrimi: _______________________
-Data: _______________________
+Signature: _______________________
+Date: _______________________
 
-Për Trimmr (Klient)
-Festim Bunjaku
-Nënshkrimi: _______________________
-Data: _______________________`;
+For RINS.AI LLC (Client)
+Muhammed Rizwan Iqbal
+Signature: _______________________
+Date: _______________________`;
 
 export default function Home() {
   const [step, setStep] = useState<"contract" | "signatures" | "success">("contract");
@@ -363,9 +425,9 @@ export default function Home() {
                 </div>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-3 tracking-tight">
-                Marrëveshje Shërbimi
+                Service Agreement
               </h1>
-              <p className="text-xl text-slate-600 font-semibold">Convex SHPK × Trimmr</p>
+              <p className="text-xl text-slate-600 font-semibold">Convex SHPK × RINS.AI LLC</p>
               <div className="mt-4 flex items-center justify-center gap-2 text-sm text-slate-500 font-medium">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -480,7 +542,7 @@ export default function Home() {
                   <div className="bg-blue-600 text-white w-12 h-12 rounded-md flex items-center justify-center font-bold shadow-lg text-xl">
                     1
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-800 uppercase tracking-wide">Trimmr (Client)</h3>
+                  <h3 className="text-2xl font-bold text-slate-800 uppercase tracking-wide">RINS.AI LLC (Client)</h3>
                 </div>
                 <label className="block text-sm font-bold text-slate-700 mb-3 uppercase tracking-wide">
                   Client Name
@@ -489,7 +551,7 @@ export default function Home() {
                   type="text"
                   value={nuraName}
                   onChange={(e) => setNuraName(e.target.value)}
-                  placeholder="Festim Bunjaku"
+                  placeholder="Muhammed Rizwan Iqbal"
                   className="w-full px-5 py-3 border-2 border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all bg-white shadow-sm text-lg"
                 />
                 <label className="block text-sm font-bold text-slate-700 mt-6 mb-3 uppercase tracking-wide">
@@ -521,7 +583,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-slate-800 uppercase tracking-wide">Personal Guarantee</h3>
-                    <p className="text-sm text-amber-700 font-semibold mt-1">Festim Bunjaku - Individual</p>
+                    <p className="text-sm text-amber-700 font-semibold mt-1">Muhammed Rizwan Iqbal - Individual</p>
                   </div>
                 </div>
                 <label className="block text-sm font-bold text-slate-700 mb-3 uppercase tracking-wide">
@@ -531,7 +593,7 @@ export default function Home() {
                   type="text"
                   value={nuraPersonalName}
                   onChange={(e) => setNuraPersonalName(e.target.value)}
-                  placeholder="Festim Bunjaku"
+                  placeholder="Muhammed Rizwan Iqbal"
                   className="w-full px-5 py-3 border-2 border-amber-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-all bg-white shadow-sm text-lg"
                 />
                 <label className="block text-sm font-bold text-slate-700 mt-6 mb-3 uppercase tracking-wide">
