@@ -775,8 +775,8 @@ button.ghost {
 
 .crm-form {
   display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
   align-items: end;
 }
 
