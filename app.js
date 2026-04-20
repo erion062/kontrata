@@ -426,19 +426,67 @@ const setActiveTab = (tab) => {
   }
 };
 
-const loadNotes = async () => {
-  if (!notesInput) {
+const renderNotes = (notes) => {
+  if (!notesDisplay) return;
+  notesDisplay.innerHTML = "";
+  if (!notes || notes.length === 0) {
+    const empty = document.createElement("p");
+    empty.textContent = "Nuk ka shenime ende.";
+    empty.style.color = "var(--muted)";
+    empty.style.textAlign = "center";
+    empty.style.padding = "40px 20px";
+    notesDisplay.appendChild(empty);
     return;
   }
+
+  notes.forEach((note) => {
+    const card = document.createElement("div");
+    card.className = "note-card";
+
+    const content = document.createElement("div");
+    content.className = "note-card-content";
+    content.textContent = note.content;
+
+    const footer = document.createElement("div");
+    footer.className = "note-card-footer";
+
+    const date = document.createElement("span");
+    date.className = "note-card-date";
+    const d = new Date(note.updated_at);
+    date.textContent = d.toLocaleString("sq-AL", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.className = "ghost";
+    deleteBtn.textContent = "Fshi";
+    deleteBtn.style.padding = "6px 12px";
+    deleteBtn.style.fontSize = "0.8rem";
+    deleteBtn.addEventListener("click", async () => {
+      await deleteNote(note.id);
+    });
+
+    footer.appendChild(date);
+    footer.appendChild(deleteBtn);
+
+    card.appendChild(content);
+    card.appendChild(footer);
+    notesDisplay.appendChild(card);
+  });
+};
+
+const loadNotes = async () => {
   try {
     const response = await fetch("/api/notes");
     if (!response.ok) {
       throw new Error("Load failed");
     }
     const data = await response.json();
-    if (notesDisplay) {
-      notesDisplay.textContent = data.content || "Nuk ka shenime ende.";
-    }
+    renderNotes(data.notes || []);
   } catch (error) {
     if (notesDisplay) {
       notesDisplay.textContent = "Nuk u lexuan shenimet.";
@@ -446,8 +494,26 @@ const loadNotes = async () => {
   }
 };
 
+const deleteNote = async (id) => {
+  try {
+    await fetch("/api/notes", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id }),
+    });
+    await loadNotes();
+  } catch (error) {
+    console.error("Delete failed", error);
+  }
+};
+
 const saveNotes = async () => {
   if (!notesInput) {
+    return;
+  }
+  const content = notesInput.value.trim();
+  if (!content) {
+    notesStatus.textContent = "Shkruaj diçka.";
     return;
   }
   notesStatus.textContent = "Duke ruajtur...";
@@ -457,7 +523,7 @@ const saveNotes = async () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ content: notesInput.value }),
+      body: JSON.stringify({ content }),
     });
     if (!response.ok) {
       throw new Error("Save failed");
@@ -468,7 +534,7 @@ const saveNotes = async () => {
       notesInput.value = "";
       notesStatus.textContent = "";
       loadNotes();
-    }, 800);
+    }, 600);
   } catch (error) {
     notesStatus.textContent = "Gabim ne ruajtje.";
   }

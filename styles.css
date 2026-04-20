@@ -449,15 +449,50 @@ body {
 }
 
 .notes-display {
-  background: transparent;
-  padding: 0;
-  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   min-height: 200px;
+  width: 100%;
+}
+
+.note-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  background: #ffffff;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.note-card:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.note-card-content {
   font-size: 0.95rem;
   line-height: 1.6;
   color: #374151;
   white-space: pre-wrap;
-  width: 100%;
+  word-break: break-word;
+}
+
+.note-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.note-card-date {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 500;
 }
 
 .notes-modal {

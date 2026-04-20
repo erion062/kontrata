@@ -38,34 +38,48 @@ module.exports = async (req, res) => {
 
   if (req.method === "GET") {
     const { rows } = await sql`
-      SELECT content, updated_at
+      SELECT id, content, updated_at
       FROM notes
-      WHERE id = 'trimmr-notes'
-      LIMIT 1;
+      ORDER BY updated_at DESC;
     `;
-    const stored = rows[0];
-    res.status(200).json({
-      content: stored?.content ?? "",
-      updatedAt: stored?.updated_at ?? null,
-    });
+    res.status(200).json({ notes: rows });
     return;
   }
 
   if (req.method === "POST") {
     const body = await readBody(req);
-    const content = body?.content ?? "";
+    const content = (body?.content ?? "").trim();
+    if (!content) {
+      res.status(400).json({ error: "Missing content" });
+      return;
+    }
 
+    const id = globalThis.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random()}`;
     await sql`
       INSERT INTO notes (id, content, updated_at)
-      VALUES ('trimmr-notes', ${content}, NOW())
-      ON CONFLICT (id)
-      DO UPDATE SET content = EXCLUDED.content, updated_at = NOW();
+      VALUES (${id}, ${content}, NOW());
+    `;
+
+    res.status(200).json({ ok: true, id });
+    return;
+  }
+
+  if (req.method === "DELETE") {
+    const body = await readBody(req);
+    const { id } = body || {};
+    if (!id) {
+      res.status(400).json({ error: "Missing id" });
+      return;
+    }
+
+    await sql`
+      DELETE FROM notes WHERE id = ${id};
     `;
 
     res.status(200).json({ ok: true });
     return;
   }
 
-  res.setHeader("Allow", ["GET", "POST"]);
+  res.setHeader("Allow", ["GET", "POST", "DELETE"]);
   res.status(405).json({ error: "Method not allowed" });
 };
