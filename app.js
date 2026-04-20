@@ -120,6 +120,12 @@ const fontSizeControl = document.getElementById("fontSize");
 const searchInput = document.getElementById("search");
 const toggleFocusButton = document.getElementById("toggleFocus");
 const toggleEditorButton = document.getElementById("toggleEditor");
+const tabPitchButton = document.getElementById("tabPitch");
+const tabCrmButton = document.getElementById("tabCrm");
+const tabNotesButton = document.getElementById("tabNotes");
+const tabCloseButtons = Array.from(document.querySelectorAll(".tab-close"));
+const newTabButton = document.querySelector(".new-tab");
+const addressBar = document.getElementById("addressBar");
 const focusPanel = document.getElementById("focusPanel");
 const focusSection = document.getElementById("focusSection");
 const focusLine = document.getElementById("focusLine");
@@ -132,9 +138,27 @@ const editorStatus = document.getElementById("editorStatus");
 const addSectionButton = document.getElementById("addSection");
 const saveScriptButton = document.getElementById("saveScript");
 const closeEditorButton = document.getElementById("closeEditor");
+const homePanel = document.getElementById("homePanel");
+const homeCards = Array.from(document.querySelectorAll(".home-card"));
+const notesPanel = document.getElementById("notesPanel");
+const notesInput = document.getElementById("notesInput");
+const saveNotesButton = document.getElementById("saveNotes");
+const notesStatus = document.getElementById("notesStatus");
+const crmPanel = document.getElementById("crmPanel");
+const crmList = document.getElementById("crmList");
+const crmStatus = document.getElementById("crmStatus");
+const leadForm = document.getElementById("leadForm");
+const leadName = document.getElementById("leadName");
+const leadPhone = document.getElementById("leadPhone");
+const leadStatus = document.getElementById("leadStatus");
+const leadNotes = document.getElementById("leadNotes");
+const countInterested = document.getElementById("countInterested");
+const countNotInterested = document.getElementById("countNotInterested");
+const countFollow = document.getElementById("countFollow");
 
 let activeSectionIndex = 0;
 let activeLineIndex = 0;
+let leads = [];
 
 const buildNav = () => {
   sectionNav.innerHTML = "";
@@ -343,6 +367,263 @@ const adjustFontSize = (size) => {
   document.documentElement.style.setProperty("--script-size", `${size}px`);
 };
 
+const showTab = (tab) => {
+  if (tab === "pitch") {
+    tabPitchButton.classList.remove("hidden");
+  }
+  if (tab === "crm") {
+    tabCrmButton.classList.remove("hidden");
+  }
+  if (tab === "notes") {
+    tabNotesButton.classList.remove("hidden");
+  }
+};
+
+const updateAddressBar = (tab) => {
+  if (!addressBar) {
+    return;
+  }
+  if (tab === "pitch") {
+    addressBar.textContent = "trimmr.app/pitch";
+  } else if (tab === "crm") {
+    addressBar.textContent = "trimmr.app/crm";
+  } else if (tab === "notes") {
+    addressBar.textContent = "trimmr.app/notes";
+  } else {
+    addressBar.textContent = "trimmr.app/newtab";
+  }
+};
+
+const setActiveTab = (tab) => {
+  const isHome = tab === "home";
+  const isCrm = tab === "crm";
+  const isNotes = tab === "notes";
+  document.body.classList.toggle("home-active", isHome);
+  document.body.classList.toggle("crm-active", isCrm);
+  document.body.classList.toggle("notes-active", isNotes);
+  homePanel.classList.toggle("hidden", !isHome);
+  crmPanel.classList.toggle("hidden", !isCrm);
+  notesPanel.classList.toggle("hidden", !isNotes);
+  tabPitchButton.classList.toggle("active", tab === "pitch");
+  tabCrmButton.classList.toggle("active", isCrm);
+  tabNotesButton.classList.toggle("active", isNotes);
+  updateAddressBar(tab);
+};
+
+const loadNotes = async () => {
+  if (!notesInput) {
+    return;
+  }
+  try {
+    const response = await fetch("/api/notes");
+    if (!response.ok) {
+      throw new Error("Load failed");
+    }
+    const data = await response.json();
+    notesInput.value = data.content ?? "";
+  } catch (error) {
+    notesStatus.textContent = "Nuk u lexuan shenimet.";
+  }
+};
+
+const saveNotes = async () => {
+  if (!notesInput) {
+    return;
+  }
+  notesStatus.textContent = "Duke ruajtur...";
+  try {
+    const response = await fetch("/api/notes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ content: notesInput.value }),
+    });
+    if (!response.ok) {
+      throw new Error("Save failed");
+    }
+    notesStatus.textContent = "U ruajt.";
+  } catch (error) {
+    notesStatus.textContent = "Gabim ne ruajtje.";
+  }
+};
+
+const statusLabel = (value) => {
+  switch (value) {
+    case "interested":
+      return "Interesuar";
+    case "not_interested":
+      return "Jo interesuar";
+    default:
+      return "Ne pritje";
+  }
+};
+
+const updateCrmStats = () => {
+  const interested = leads.filter((lead) => lead.status === "interested").length;
+  const notInterested = leads.filter((lead) => lead.status === "not_interested").length;
+  const follow = leads.filter((lead) => lead.status === "follow_up").length;
+  countInterested.textContent = interested;
+  countNotInterested.textContent = notInterested;
+  countFollow.textContent = follow;
+};
+
+const renderLeads = () => {
+  crmList.innerHTML = "";
+  if (leads.length === 0) {
+    crmList.innerHTML = "<p>Nuk ka kontakte ende.</p>";
+    updateCrmStats();
+    return;
+  }
+
+  leads.forEach((lead) => {
+    const card = document.createElement("div");
+    card.className = "crm-card";
+
+    const header = document.createElement("div");
+    header.className = "crm-card-header";
+
+    const title = document.createElement("h3");
+    title.textContent = lead.name;
+
+    const pill = document.createElement("span");
+    pill.className = `crm-pill ${lead.status}`;
+    pill.textContent = statusLabel(lead.status);
+
+    header.appendChild(title);
+    header.appendChild(pill);
+
+    const details = document.createElement("div");
+
+    const phoneLine = document.createElement("p");
+    const phoneStrong = document.createElement("strong");
+    phoneStrong.textContent = "Numri:";
+    phoneLine.appendChild(phoneStrong);
+    phoneLine.append(` ${lead.phone || "-"}`);
+
+    const notesLine = document.createElement("p");
+    const notesStrong = document.createElement("strong");
+    notesStrong.textContent = "Shenime:";
+    notesLine.appendChild(notesStrong);
+    notesLine.append(` ${lead.notes || "-"}`);
+
+    details.appendChild(phoneLine);
+    details.appendChild(notesLine);
+
+    const actions = document.createElement("div");
+    actions.className = "crm-actions";
+
+    const statusSelect = document.createElement("select");
+    statusSelect.innerHTML = `
+      <option value="interested">Interesuar</option>
+      <option value="not_interested">Jo interesuar</option>
+      <option value="follow_up">Ne pritje</option>
+    `;
+    statusSelect.value = lead.status;
+
+    const saveButton = document.createElement("button");
+    saveButton.className = "primary";
+    saveButton.textContent = "Ruaj";
+
+    const deleteButton = document.createElement("button");
+    deleteButton.className = "ghost";
+    deleteButton.textContent = "Fshi";
+
+    saveButton.addEventListener("click", async () => {
+      await updateLead({ ...lead, status: statusSelect.value });
+    });
+
+    deleteButton.addEventListener("click", async () => {
+      await deleteLead(lead.id);
+    });
+
+    actions.appendChild(statusSelect);
+    actions.appendChild(saveButton);
+    actions.appendChild(deleteButton);
+
+    card.appendChild(header);
+    card.appendChild(details);
+    card.appendChild(actions);
+    crmList.appendChild(card);
+  });
+
+  updateCrmStats();
+};
+
+const loadLeads = async () => {
+  try {
+    const response = await fetch("/api/leads");
+    if (!response.ok) {
+      throw new Error("Load failed");
+    }
+    const data = await response.json();
+    leads = Array.isArray(data.leads) ? data.leads : [];
+    renderLeads();
+  } catch (error) {
+    crmStatus.textContent = "Nuk u lexuan kontaktet.";
+  }
+};
+
+const createLead = async (payload) => {
+  crmStatus.textContent = "Duke ruajtur...";
+  try {
+    const response = await fetch("/api/leads", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+    if (!response.ok) {
+      throw new Error("Save failed");
+    }
+    crmStatus.textContent = "U ruajt.";
+    await loadLeads();
+  } catch (error) {
+    crmStatus.textContent = "Gabim ne ruajtje.";
+  }
+};
+
+const updateLead = async (payload) => {
+  crmStatus.textContent = "Duke perditesuar...";
+  try {
+    const response = await fetch("/api/leads", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+    if (!response.ok) {
+      throw new Error("Update failed");
+    }
+    crmStatus.textContent = "U perditesua.";
+    await loadLeads();
+  } catch (error) {
+    crmStatus.textContent = "Gabim ne perditesim.";
+  }
+};
+
+const deleteLead = async (id) => {
+  crmStatus.textContent = "Duke fshire...";
+  try {
+    const response = await fetch("/api/leads", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ id }),
+    });
+    if (!response.ok) {
+      throw new Error("Delete failed");
+    }
+    crmStatus.textContent = "U fshi.";
+    await loadLeads();
+  } catch (error) {
+    crmStatus.textContent = "Gabim ne fshirje.";
+  }
+};
+
 const handleSearch = () => {
   const term = searchInput.value.toLowerCase();
   const cards = document.querySelectorAll(".card");
@@ -398,6 +679,9 @@ const initializeApp = async () => {
   buildCards();
   setActiveSection(0, false);
   adjustFontSize(fontSizeControl.value);
+  await loadLeads();
+  await loadNotes();
+  setActiveTab("home");
 };
 
 initializeApp();
@@ -414,6 +698,27 @@ prevLineButton.addEventListener("click", () => moveLine(-1));
 toggleFocusButton.addEventListener("click", toggleFocus);
 toggleEditorButton.addEventListener("click", openEditor);
 closeEditorButton.addEventListener("click", closeEditor);
+tabPitchButton.addEventListener("click", () => setActiveTab("pitch"));
+tabCrmButton.addEventListener("click", () => setActiveTab("crm"));
+tabNotesButton.addEventListener("click", () => setActiveTab("notes"));
+tabCloseButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const tabItem = button.closest(".tab-item");
+    tabItem?.classList.add("hidden");
+    setActiveTab("home");
+  });
+});
+newTabButton?.addEventListener("click", () => setActiveTab("home"));
+homeCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const target = card.dataset.target;
+    const nextTab = target === "crm" ? "crm" : target === "notes" ? "notes" : "pitch";
+    showTab(nextTab);
+    setActiveTab(nextTab);
+  });
+});
+saveNotesButton?.addEventListener("click", saveNotes);
 addSectionButton.addEventListener("click", () => {
   sections = [
     ...sections,
@@ -432,6 +737,25 @@ saveScriptButton.addEventListener("click", async () => {
   buildCards();
   setActiveSection(0, false);
   await saveToCloud(sections);
+});
+
+leadForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const payload = {
+    name: leadName.value.trim(),
+    phone: leadPhone.value.trim(),
+    status: leadStatus.value,
+    notes: leadNotes.value.trim(),
+  };
+  if (!payload.name) {
+    crmStatus.textContent = "Shkruaj emrin.";
+    return;
+  }
+  await createLead(payload);
+  leadName.value = "";
+  leadPhone.value = "";
+  leadNotes.value = "";
+  leadStatus.value = "interested";
 });
 
 window.addEventListener("keydown", (event) => {
