@@ -235,6 +235,12 @@ body {
   display: none;
 }
 
+.crm-active .layout,
+.notes-active .layout,
+.home-active .layout {
+  grid-template-columns: 1fr;
+}
+
 .notes-active .controls,
 .notes-active .sidebar,
 .notes-active #focusPanel,
