@@ -179,8 +179,8 @@
 
           <section id="crmPanel" class="crm hidden">
             <div class="crm-container">
-              <div class="crm-header">
-                <div class="crm-header-text">
+              <div class="crm-sidebar">
+                <div class="crm-header">
                   <p class="eyebrow">CRM</p>
                   <h2>Kontaktet & Statusi</h2>
                   <p class="crm-subtitle">Ruaj klientet, statusin dhe shenimet.</p>
@@ -199,19 +199,14 @@
                     <strong id="countFollow">0</strong>
                   </div>
                 </div>
+                <button id="toggleFormBtn" class="crm-add-btn" type="button">
+                  <span class="crm-add-icon">+</span>
+                  <span>Shto kontakt te ri</span>
+                </button>
               </div>
 
-              <div class="crm-body">
-                <div class="crm-add-section">
-                  <button id="toggleFormBtn" class="crm-add-btn" type="button">
-                    <span class="crm-add-icon">+</span>
-                    <span>Shto kontakt te ri</span>
-                  </button>
-                </div>
-
-                <div class="crm-list-wrapper">
-                  <div class="crm-list" id="crmList"></div>
-                </div>
+              <div class="crm-main">
+                <div class="crm-list" id="crmList"></div>
               </div>
             </div>
 
