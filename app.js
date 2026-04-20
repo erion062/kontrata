@@ -1,0 +1,465 @@
+let sections = [
+  {
+    id: "hapja",
+    title: "Hapja",
+    tag: "Start",
+    lines: [
+      "Hej [Emri], shpresoj qe te kapa ne moment te mire, e di qe je i zene.",
+      "Do jem shume i shkurter se e di si eshte puna ne dyqan.",
+      "Do te te bej vetem dy pyetje per te kuptuar si po e menaxhon fluksin e punes, pastaj do ta shohim nese kjo qe kemi ne mund te te kurseje kohe dhe nerva.",
+      "Ne rregull?",
+    ],
+  },
+  {
+    id: "zbulimi",
+    title: "Zbulimi (Pain Points)",
+    tag: "Pyetje",
+    lines: [
+      "Shkelqyeshem. Me thuaj pak—ne nje dite te ngarkuar, sa here te bie telefoni derisa je duke qethur nje klient?",
+      "E marr me mend. Dhe nga ato telefonata, sa jane vetem per te pyetur 'A ki vend?' apo 'Sa po pret?'?",
+      "Cka ndodh kur nuk mundesh me u pergjigj se ke doreza? A e humb ate klient, apo duhesh me leshu makinen, me u kthy me telefonu dhe ai nuk po ta hap me?",
+      "Ne fund te javes, sa kliente beson se i humb kot, vetem pse nuk arrit me u marre ne telefon?",
+    ],
+  },
+  {
+    id: "amplifikimi",
+    title: "Amplifikimi i Dhimbjes",
+    tag: "Reframe",
+    lines: [
+      "Pikerisht ketu eshte problemi.",
+      "Telefoni te kthen ne sekretar e jo ne mjeshter.",
+      "Dhe klienti i ri—sidomos gjenerata e re—urrejne te telefonojne. Ata duan me e pa orarin ne telefon, me e pa cmimin, dhe me rezervu pa fol me njeri. Nese ty nuk te gjejne dot online, shkojne te tjetri.",
+      "Pra po e humb xhiron jo pse nuk din me qeth, por se procesi eshte i vjeter.",
+    ],
+  },
+  {
+    id: "tranzicioni",
+    title: "Tranzicioni",
+    tag: "Bridge",
+    lines: [
+      "Ne rregull. E sheh qarte problemin. Nuk ke nje dere digjitale per dyqanin.",
+    ],
+  },
+  {
+    id: "prezantimi",
+    title: "Prezantimi (Pitch)",
+    tag: "Vlera",
+    lines: [
+      "Tani ta shpjegoj shkurt se cfare eshte Trimmr.",
+      "Ne jemi platforma e pare digjitale per rezervime e ndertuar enkas per berberet ne Kosove dhe Shqiperi.",
+      "Ti merr nje profil profesional ne App, qe flet Shqip, ku klienti sheh punen tende, cmimet, dhe kohen reale kur je i lire.",
+      "Klienti hyn, zgjedh sherbimin—qofte floke apo mjekerr—dhe e rezervon me nje klik. Ty te vjen njoftimi dhe ai futet direkt ne kalendar.",
+      "Pa telefonata. Pa nderprerje.",
+      "Plus, e ke opsionin me vendos kohe buferi, pushim dreke, apo edhe me blloku diten nese je me pushime.",
+      "Ne fund te dites, ti je fokusu te makina, klientet vijne te sigurt, dhe telefoni rri ne xhep.",
+    ],
+  },
+  {
+    id: "konfirmimi",
+    title: "Konfirmimi",
+    tag: "Check",
+    lines: [
+      "A po me kupton deri ketu?",
+      "A e sheh se si kjo ta lehteson diten dhe ta rrit numrin e termineve pa u lodhur?",
+    ],
+  },
+  {
+    id: "cmimi",
+    title: "Cmimi (15€/Muaj)",
+    tag: "Oferta",
+    lines: [
+      "Ne rregull. Sa i perket pageses, jemi shume transparent.",
+      "Trimmr nuk merr perqindje nga klientet e tu si agjencite e tjera. Nuk jemi agjenci marketingu.",
+      "Ne jemi vegel pune. Eshte abonim fiks mujor.",
+      "Kushton 15 Euro ne muaj per gjithe dyqanin.",
+      "Mund te regjistrosh sa berbere te duash pa pagese shtese. Sistemi, perkthimi ne Shqip, njoftimet—gjithcka brenda.",
+      "Nuk ka kontrata vjetore. Nese nuk te pelqen, e nderpret pas nje muaji. Pa pyetje.",
+    ],
+  },
+  {
+    id: "mbyllja",
+    title: "Mbyllja (Close)",
+    tag: "Vendimi",
+    lines: [
+      "Tani pyetja eshte e thjeshte:",
+      "A do te vazhdosh me telefonatat dhe zhurmen, apo do e provosh nje muaj me qetesi ne dyqan per 15 Euro?",
+      "Cka mendon—a ia vlen ta fillojme regjistrimin sot?",
+    ],
+  },
+  {
+    id: "po",
+    title: "Nese Thote Po",
+    tag: "Onboarding",
+    lines: [
+      "Shkelqyeshem. Shume mire.",
+      "Procesi zgjat 5 minuta dhe behet vetem nje here ne Web, jo ne telefon. Une do ta dergoj linkun direkt.",
+      "Ti ploteson emrin e dyqanit, lokacionin, dhe orarin e punes. Pastaj mundesh me i shtu berberet e tjere.",
+      "Qe neser klientet mund te fillojne me rezervu online.",
+      "Me jep nje email ose numer telefoni ku ta dergoj linkun e regjistrimit direkt.",
+      "Perfekt. Te ka ardhur tani. Nese ke nevoje per ndihme gjate krijimit te profilit, me shkruaj lirisht.",
+      "Mire se vjen ne Trimmr!",
+    ],
+  },
+  {
+    id: "kundershtime",
+    title: "Menaxhimi i Kundershtimeve",
+    tag: "Handle",
+    lines: [
+      "Po mendohem / Do ta shoh → Pa problem. Cfare konkretisht do te duhej te shihje apo te mendoje me shume?",
+      "15 euro jane shume / S'kam buxhet → Te kuptoj. Ama mendo pak—sa kushton nje klient i humbur? Nese kjo vegel te sjell vetem nje rezervim shtese ne muaj qe perndryshe do ta humbisje nga telefoni, a e mbulon ai shpenzimin e 15 eurove?",
+      "Punoj me telefonata, njerezit jane mesuar ashtu → E drejte, klientet e vjeter kane mesuar ashtu. Por cka me klientet e rinj qe s'po vijne fare se nuk gjejne dot informacion per ty? Trimmr nuk e largon klientin e vjeter—atyre mundesh me ju thane 'Vazhdo thirr'—por e sjell klientin e ri qe fle me telefon ne dore.",
+      "Po a eshte e sigurt pagesa? → Pagesa behet permes Stripe, njejte si me blejtje ne Amazon apo Netflix. Ne nuk i ruajme te dhenat e kartes ne serverat tone. Eshte 100% e sigurt.",
+      "S'di me perdore keto aplikacione → Pikerisht per kete e kemi ndertu ne. Eshte ne Shqip dhe shume i thjeshte. Nese din me perdore Instagramin apo TikTok-un, Trimmr-in e meson per 2 minuta. Dhe jam une ketu nese ngec diku.",
+    ],
+  },
+];
+
+const sectionNav = document.getElementById("sectionNav");
+const scriptContainer = document.getElementById("scriptContainer");
+const fontSizeControl = document.getElementById("fontSize");
+const searchInput = document.getElementById("search");
+const toggleFocusButton = document.getElementById("toggleFocus");
+const toggleEditorButton = document.getElementById("toggleEditor");
+const focusPanel = document.getElementById("focusPanel");
+const focusSection = document.getElementById("focusSection");
+const focusLine = document.getElementById("focusLine");
+const focusPreview = document.getElementById("focusPreview");
+const nextLineButton = document.getElementById("nextLine");
+const prevLineButton = document.getElementById("prevLine");
+const editorPanel = document.getElementById("editorPanel");
+const editorList = document.getElementById("editorList");
+const editorStatus = document.getElementById("editorStatus");
+const addSectionButton = document.getElementById("addSection");
+const saveScriptButton = document.getElementById("saveScript");
+const closeEditorButton = document.getElementById("closeEditor");
+
+let activeSectionIndex = 0;
+let activeLineIndex = 0;
+
+const buildNav = () => {
+  sectionNav.innerHTML = "";
+  sections.forEach((section, index) => {
+    const link = document.createElement("a");
+    link.href = `#${section.id}`;
+    link.className = "section-link";
+    link.dataset.index = index;
+    link.innerHTML = `<span>${index + 1}. ${section.title}</span><small>${section.tag}</small>`;
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      setActiveSection(index, true);
+    });
+    sectionNav.appendChild(link);
+  });
+};
+
+const buildCards = () => {
+  scriptContainer.innerHTML = "";
+  sections.forEach((section, index) => {
+    const card = document.createElement("article");
+    card.id = section.id;
+    card.className = "card";
+    card.dataset.index = index;
+
+    const heading = document.createElement("h3");
+    heading.textContent = `${index + 1}. ${section.title}`;
+
+    const tag = document.createElement("span");
+    tag.className = "tag";
+    tag.textContent = section.tag;
+
+    const list = document.createElement("ul");
+    section.lines.forEach((line) => {
+      const li = document.createElement("li");
+      li.textContent = line;
+      list.appendChild(li);
+    });
+
+    card.appendChild(tag);
+    card.appendChild(heading);
+    card.appendChild(list);
+    scriptContainer.appendChild(card);
+  });
+};
+
+const setActiveSection = (index, scrollIntoView = false) => {
+  activeSectionIndex = index;
+  activeLineIndex = 0;
+  updateActiveStates();
+  updateFocusPanel();
+
+  if (scrollIntoView) {
+    const targetCard = document.querySelector(`.card[data-index="${index}"]`);
+    targetCard?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
+const updateActiveStates = () => {
+  document.querySelectorAll(".section-link").forEach((link) => {
+    link.classList.toggle("active", Number(link.dataset.index) === activeSectionIndex);
+  });
+  document.querySelectorAll(".card").forEach((card) => {
+    card.classList.toggle("active", Number(card.dataset.index) === activeSectionIndex);
+  });
+};
+
+const updateFocusPanel = () => {
+  const section = sections[activeSectionIndex];
+  focusSection.textContent = section.title;
+  focusLine.textContent = section.lines[activeLineIndex] || "";
+  focusPreview.textContent = section.lines[activeLineIndex + 1] || "Fundi i seksionit";
+};
+
+const slugify = (value) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+
+const createEditorRow = (labelText, field, value, isTextarea = false) => {
+  const row = document.createElement("div");
+  row.className = "editor-row";
+
+  const label = document.createElement("label");
+  label.textContent = labelText;
+
+  const input = isTextarea ? document.createElement("textarea") : document.createElement("input");
+  if (!isTextarea) {
+    input.type = "text";
+  }
+  input.dataset.field = field;
+  input.value = value;
+
+  row.appendChild(label);
+  row.appendChild(input);
+
+  return row;
+};
+
+const renderEditor = () => {
+  editorList.innerHTML = "";
+  sections.forEach((section, index) => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "editor-section";
+    wrapper.dataset.index = index;
+
+    wrapper.appendChild(createEditorRow("Titulli", "title", section.title));
+    wrapper.appendChild(createEditorRow("Shenja", "tag", section.tag));
+    wrapper.appendChild(
+      createEditorRow(
+        "Rreshtat (nje fjali per rresht)",
+        "lines",
+        section.lines.join("\n"),
+        true
+      )
+    );
+
+    const removeButton = document.createElement("button");
+    removeButton.className = "ghost editor-remove";
+    removeButton.type = "button";
+    removeButton.textContent = "Hiq seksionin";
+    removeButton.addEventListener("click", () => {
+      sections = sections.filter((_, idx) => idx !== index);
+      renderEditor();
+    });
+
+    wrapper.appendChild(removeButton);
+    editorList.appendChild(wrapper);
+  });
+};
+
+const collectEditorData = () => {
+  const entries = Array.from(editorList.querySelectorAll(".editor-section"));
+  return entries.map((entry, index) => {
+    const titleValue = entry.querySelector("[data-field='title']").value.trim();
+    const tagValue = entry.querySelector("[data-field='tag']").value.trim();
+    const linesValue = entry
+      .querySelector("[data-field='lines']")
+      .value.split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean);
+
+    const title = titleValue || `Seksioni ${index + 1}`;
+    const tag = tagValue || "Seksion";
+    const id = slugify(title) || `seksioni-${index + 1}`;
+
+    return {
+      id,
+      title,
+      tag,
+      lines: linesValue.length ? linesValue : ["(Shto tekst)"],
+    };
+  });
+};
+
+const openEditor = () => {
+  renderEditor();
+  editorStatus.textContent = "";
+  editorPanel.classList.remove("hidden");
+};
+
+const closeEditor = () => {
+  editorPanel.classList.add("hidden");
+};
+
+const saveToCloud = async (payload) => {
+  editorStatus.textContent = "Duke ruajtur...";
+  try {
+    const response = await fetch("/api/script", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ sections: payload }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Save failed");
+    }
+
+    editorStatus.textContent = "U ruajt me sukses.";
+  } catch (error) {
+    editorStatus.textContent = "Gabim ne ruajtje. Provo perseri.";
+  }
+};
+
+const loadFromCloud = async () => {
+  try {
+    const response = await fetch("/api/script");
+    if (!response.ok) {
+      return;
+    }
+    const data = await response.json();
+    if (Array.isArray(data.sections) && data.sections.length > 0) {
+      sections = data.sections;
+    }
+  } catch (error) {
+    // Ignore loading errors and keep defaults
+  }
+};
+
+const adjustFontSize = (size) => {
+  document.documentElement.style.setProperty("--script-size", `${size}px`);
+};
+
+const handleSearch = () => {
+  const term = searchInput.value.toLowerCase();
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card, index) => {
+    const text = card.textContent.toLowerCase();
+    card.style.display = text.includes(term) ? "block" : "none";
+    if (term && text.includes(term)) {
+      activeSectionIndex = index;
+    }
+  });
+  updateActiveStates();
+  updateFocusPanel();
+};
+
+const toggleFocus = () => {
+  focusPanel.classList.toggle("hidden");
+  toggleFocusButton.textContent = focusPanel.classList.contains("hidden")
+    ? "Menyra fokus"
+    : "Dil nga fokusi";
+};
+
+const moveLine = (direction) => {
+  const section = sections[activeSectionIndex];
+  const nextIndex = activeLineIndex + direction;
+  if (nextIndex < 0) {
+    if (activeSectionIndex > 0) {
+      activeSectionIndex -= 1;
+      activeLineIndex = sections[activeSectionIndex].lines.length - 1;
+    }
+  } else if (nextIndex >= section.lines.length) {
+    if (activeSectionIndex < sections.length - 1) {
+      activeSectionIndex += 1;
+      activeLineIndex = 0;
+    }
+  } else {
+    activeLineIndex = nextIndex;
+  }
+  updateActiveStates();
+  updateFocusPanel();
+};
+
+const moveSection = (direction) => {
+  const nextIndex = activeSectionIndex + direction;
+  if (nextIndex < 0 || nextIndex >= sections.length) {
+    return;
+  }
+  setActiveSection(nextIndex, true);
+};
+
+const initializeApp = async () => {
+  await loadFromCloud();
+  buildNav();
+  buildCards();
+  setActiveSection(0, false);
+  adjustFontSize(fontSizeControl.value);
+};
+
+initializeApp();
+
+fontSizeControl.addEventListener("input", (event) => {
+  adjustFontSize(event.target.value);
+});
+
+searchInput.addEventListener("input", handleSearch);
+
+nextLineButton.addEventListener("click", () => moveLine(1));
+prevLineButton.addEventListener("click", () => moveLine(-1));
+
+toggleFocusButton.addEventListener("click", toggleFocus);
+toggleEditorButton.addEventListener("click", openEditor);
+closeEditorButton.addEventListener("click", closeEditor);
+addSectionButton.addEventListener("click", () => {
+  sections = [
+    ...sections,
+    {
+      id: `seksioni-${sections.length + 1}`,
+      title: `Seksioni ${sections.length + 1}`,
+      tag: "Seksion",
+      lines: ["(Shto tekst)"],
+    },
+  ];
+  renderEditor();
+});
+saveScriptButton.addEventListener("click", async () => {
+  sections = collectEditorData();
+  buildNav();
+  buildCards();
+  setActiveSection(0, false);
+  await saveToCloud(sections);
+});
+
+window.addEventListener("keydown", (event) => {
+  if (event.target.matches("input, textarea")) {
+    return;
+  }
+  if (event.key >= "0" && event.key <= "9") {
+    const index = event.key === "0" ? 9 : Number(event.key) - 1;
+    if (sections[index]) {
+      setActiveSection(index, true);
+    }
+    return;
+  }
+  switch (event.key.toLowerCase()) {
+    case "n":
+      moveSection(1);
+      break;
+    case "p":
+      moveSection(-1);
+      break;
+    case " ":
+      event.preventDefault();
+      moveLine(1);
+      break;
+    case "f":
+      toggleFocus();
+      break;
+    default:
+      break;
+  }
+});

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trimmr Pitch Console</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-title">Trimmr Pitch Console</span>
+          <span class="brand-subtitle">Lexo shpejt, lidhu shpejt, mbyll me qartesi.</span>
+        </div>
+        <div class="controls">
+          <label class="control">
+            <span>Madhesia</span>
+            <input id="fontSize" type="range" min="16" max="28" value="20" />
+          </label>
+          <label class="control">
+            <span>Kerko</span>
+            <input id="search" type="search" placeholder="Kerko seksion ose fjali" />
+          </label>
+          <button id="toggleFocus" class="primary">Menyra fokus</button>
+          <button id="toggleEditor" class="ghost">Edito skriptin</button>
+        </div>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <h2>Seksionet</h2>
+            <p>Kliko per te kaluar ose shtyp 1-0 per levizje te shpejte.</p>
+          </div>
+          <nav id="sectionNav" class="section-nav"></nav>
+          <div class="sidebar-footer">
+            <div class="hint">Shkurtore: N / P (tjeter, mepar), Space (rreshti tjeter), F (fokus)</div>
+          </div>
+        </aside>
+
+        <main class="content">
+          <section id="focusPanel" class="focus hidden">
+            <div class="focus-header">
+              <div>
+                <p class="eyebrow">Po flet tani</p>
+                <h2 id="focusSection">Opening</h2>
+              </div>
+              <div class="focus-actions">
+                <button id="prevLine" class="ghost">Meparshme</button>
+                <button id="nextLine" class="primary">Rreshti tjeter</button>
+              </div>
+            </div>
+            <div class="focus-body">
+              <div id="focusLine" class="focus-line"></div>
+              <div class="focus-next">
+                <span>Tjetra</span>
+                <div id="focusPreview" class="focus-preview"></div>
+              </div>
+            </div>
+          </section>
+
+          <section id="editorPanel" class="editor hidden">
+            <div class="editor-header">
+              <div>
+                <p class="eyebrow">Editim</p>
+                <h2>Ndrysho skriptin</h2>
+                <p class="editor-subtitle">Ndaj rreshtat me Enter. Ruaj ne cloud.</p>
+              </div>
+              <div class="editor-actions">
+                <button id="addSection" class="ghost">Shto seksion</button>
+                <button id="saveScript" class="primary">Ruaj</button>
+                <button id="closeEditor" class="ghost">Mbyll</button>
+              </div>
+            </div>
+            <div id="editorStatus" class="editor-status"></div>
+            <div id="editorList" class="editor-list"></div>
+          </section>
+
+          <section class="script" id="scriptContainer"></section>
+        </main>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
