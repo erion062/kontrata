@@ -326,7 +326,7 @@ body {
   padding: 26px 30px;
   box-shadow: 0 20px 50px rgba(20, 20, 20, 0.1);
   display: grid;
-  gap: 18px;
+  gap: 20px;
 }
 
 .notes.hidden {
@@ -708,6 +708,27 @@ button.ghost {
   display: none;
 }
 
+.crm-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.crm-left {
+  display: grid;
+  gap: 20px;
+}
+
+.crm-right {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  min-height: 320px;
+  box-shadow: 0 16px 40px rgba(20, 20, 20, 0.08);
+}
+
 .crm-header {
   display: flex;
   align-items: flex-start;
@@ -859,6 +880,10 @@ button.ghost {
   .sidebar {
     position: static;
     max-height: none;
+  }
+
+  .crm-grid {
+    grid-template-columns: 1fr;
   }
 }
 

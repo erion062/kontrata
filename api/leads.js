@@ -15,6 +15,9 @@ const ensureTable = async () => {
 };
 
 const readBody = async (req) => {
+  if (req.body) {
+    return req.body;
+  }
   return new Promise((resolve, reject) => {
     let body = "";
     req.on("data", (chunk) => {
