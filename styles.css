@@ -955,6 +955,7 @@ button.ghost:hover {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
 }
 
 .crm-add-section {
@@ -1084,6 +1085,7 @@ button.ghost:hover {
   background: transparent;
   border: none;
   padding: 0;
+  width: 100%;
 }
 
 .crm-form {
