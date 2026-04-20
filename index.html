@@ -188,6 +188,10 @@
                     <label>Numri</label>
                     <input id="leadPhone" type="text" placeholder="+383..." />
                   </div>
+                  <div class="crm-field crm-field--full">
+                    <label>Shenime</label>
+                    <textarea id="leadNotes" placeholder="Detaje ose vërejtje"></textarea>
+                  </div>
                   <div class="crm-field">
                     <label>Statusi</label>
                     <select id="leadStatus">
@@ -196,12 +200,10 @@
                       <option value="follow_up">Ne pritje</option>
                     </select>
                   </div>
-                  <div class="crm-field crm-field--full">
-                    <label>Shenime</label>
-                    <textarea id="leadNotes" placeholder="Detaje ose vërejtje"></textarea>
+                  <div class="crm-field">
+                    <button class="primary" type="submit">Shto kontakt</button>
+                    <span id="crmStatus" class="crm-status"></span>
                   </div>
-                  <button class="primary" type="submit">Shto kontakt</button>
-                  <span id="crmStatus" class="crm-status"></span>
                 </form>
               </div>
 
