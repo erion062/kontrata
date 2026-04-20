@@ -1081,6 +1081,9 @@ button.ghost:hover {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .crm-form {
