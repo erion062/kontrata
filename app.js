@@ -144,6 +144,11 @@ const notesPanel = document.getElementById("notesPanel");
 const notesInput = document.getElementById("notesInput");
 const saveNotesButton = document.getElementById("saveNotes");
 const notesStatus = document.getElementById("notesStatus");
+const toggleNotesBtn = document.getElementById("toggleNotesBtn");
+const cancelNotesBtn = document.getElementById("cancelNotesBtn");
+const closeNotesModalBtn = document.getElementById("closeNotesModalBtn");
+const notesModal = document.getElementById("notesModal");
+const notesDisplay = document.getElementById("notesDisplay");
 const crmPanel = document.getElementById("crmPanel");
 const crmList = document.getElementById("crmList");
 const crmStatus = document.getElementById("crmStatus");
@@ -155,6 +160,10 @@ const leadNotes = document.getElementById("leadNotes");
 const countInterested = document.getElementById("countInterested");
 const countNotInterested = document.getElementById("countNotInterested");
 const countFollow = document.getElementById("countFollow");
+const toggleFormBtn = document.getElementById("toggleFormBtn");
+const cancelFormBtn = document.getElementById("cancelFormBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const crmModal = document.getElementById("crmModal");
 
 let activeSectionIndex = 0;
 let activeLineIndex = 0;
@@ -420,9 +429,13 @@ const loadNotes = async () => {
       throw new Error("Load failed");
     }
     const data = await response.json();
-    notesInput.value = data.content ?? "";
+    if (notesDisplay) {
+      notesDisplay.textContent = data.content || "Nuk ka shenime ende.";
+    }
   } catch (error) {
-    notesStatus.textContent = "Nuk u lexuan shenimet.";
+    if (notesDisplay) {
+      notesDisplay.textContent = "Nuk u lexuan shenimet.";
+    }
   }
 };
 
@@ -443,6 +456,12 @@ const saveNotes = async () => {
       throw new Error("Save failed");
     }
     notesStatus.textContent = "U ruajt.";
+    setTimeout(() => {
+      notesModal?.classList.add("hidden");
+      notesInput.value = "";
+      notesStatus.textContent = "";
+      loadNotes();
+    }, 800);
   } catch (error) {
     notesStatus.textContent = "Gabim ne ruajtje.";
   }
@@ -471,7 +490,12 @@ const updateCrmStats = () => {
 const renderLeads = () => {
   crmList.innerHTML = "";
   if (leads.length === 0) {
-    crmList.innerHTML = "<p>Nuk ka kontakte ende.</p>";
+    const empty = document.createElement("p");
+    empty.textContent = "Nuk ka kontakte ende.";
+    empty.style.color = "var(--muted)";
+    empty.style.textAlign = "center";
+    empty.style.padding = "40px 20px";
+    crmList.appendChild(empty);
     updateCrmStats();
     return;
   }
@@ -480,69 +504,62 @@ const renderLeads = () => {
     const card = document.createElement("div");
     card.className = "crm-card";
 
-    const header = document.createElement("div");
-    header.className = "crm-card-header";
+    const nameCol = document.createElement("div");
+    nameCol.className = "crm-card-name";
+    const nameLabel = document.createElement("span");
+    nameLabel.className = "crm-card-label";
+    nameLabel.textContent = "EMRI";
+    const nameValue = document.createElement("h3");
+    nameValue.textContent = lead.name;
+    nameCol.appendChild(nameLabel);
+    nameCol.appendChild(nameValue);
 
-    const title = document.createElement("h3");
-    title.textContent = lead.name;
+    const phoneCol = document.createElement("div");
+    phoneCol.className = "crm-card-phone";
+    const phoneLabel = document.createElement("span");
+    phoneLabel.className = "crm-card-label";
+    phoneLabel.textContent = "NUMRI";
+    const phoneValue = document.createElement("span");
+    phoneValue.textContent = lead.phone || "-";
+    phoneCol.appendChild(phoneLabel);
+    phoneCol.appendChild(phoneValue);
 
+    const statusCol = document.createElement("div");
+    statusCol.className = "crm-card-status";
     const pill = document.createElement("span");
     pill.className = `crm-pill ${lead.status}`;
     pill.textContent = statusLabel(lead.status);
+    statusCol.appendChild(pill);
 
-    header.appendChild(title);
-    header.appendChild(pill);
-
-    const details = document.createElement("div");
-
-    const phoneLine = document.createElement("p");
-    const phoneStrong = document.createElement("strong");
-    phoneStrong.textContent = "Numri:";
-    phoneLine.appendChild(phoneStrong);
-    phoneLine.append(` ${lead.phone || "-"}`);
-
-    const notesLine = document.createElement("p");
-    const notesStrong = document.createElement("strong");
-    notesStrong.textContent = "Shenime:";
-    notesLine.appendChild(notesStrong);
-    notesLine.append(` ${lead.notes || "-"}`);
-
-    details.appendChild(phoneLine);
-    details.appendChild(notesLine);
+    const notesCol = document.createElement("div");
+    notesCol.className = "crm-card-notes";
+    const notesLabel = document.createElement("span");
+    notesLabel.className = "crm-card-label";
+    notesLabel.textContent = "SHENIME";
+    const notesValue = document.createElement("span");
+    notesValue.textContent = lead.notes || "-";
+    notesCol.appendChild(notesLabel);
+    notesCol.appendChild(notesValue);
 
     const actions = document.createElement("div");
     actions.className = "crm-actions";
 
-    const statusSelect = document.createElement("select");
-    statusSelect.innerHTML = `
-      <option value="interested">Interesuar</option>
-      <option value="not_interested">Jo interesuar</option>
-      <option value="follow_up">Ne pritje</option>
-    `;
-    statusSelect.value = lead.status;
-
-    const saveButton = document.createElement("button");
-    saveButton.className = "primary";
-    saveButton.textContent = "Ruaj";
-
     const deleteButton = document.createElement("button");
     deleteButton.className = "ghost";
     deleteButton.textContent = "Fshi";
-
-    saveButton.addEventListener("click", async () => {
-      await updateLead({ ...lead, status: statusSelect.value });
-    });
+    deleteButton.style.padding = "8px 14px";
+    deleteButton.style.fontSize = "0.85rem";
 
     deleteButton.addEventListener("click", async () => {
       await deleteLead(lead.id);
     });
 
-    actions.appendChild(statusSelect);
-    actions.appendChild(saveButton);
     actions.appendChild(deleteButton);
 
-    card.appendChild(header);
-    card.appendChild(details);
+    card.appendChild(nameCol);
+    card.appendChild(phoneCol);
+    card.appendChild(statusCol);
+    card.appendChild(notesCol);
     card.appendChild(actions);
     crmList.appendChild(card);
   });
@@ -719,6 +736,48 @@ homeCards.forEach((card) => {
   });
 });
 saveNotesButton?.addEventListener("click", saveNotes);
+
+toggleNotesBtn?.addEventListener("click", () => {
+  notesModal?.classList.remove("hidden");
+});
+
+cancelNotesBtn?.addEventListener("click", () => {
+  notesModal?.classList.add("hidden");
+  notesInput.value = "";
+  notesStatus.textContent = "";
+});
+
+closeNotesModalBtn?.addEventListener("click", () => {
+  notesModal?.classList.add("hidden");
+  notesInput.value = "";
+  notesStatus.textContent = "";
+});
+
+notesModal?.querySelector(".notes-modal-overlay")?.addEventListener("click", () => {
+  notesModal?.classList.add("hidden");
+  notesInput.value = "";
+  notesStatus.textContent = "";
+});
+
+toggleFormBtn?.addEventListener("click", () => {
+  crmModal?.classList.remove("hidden");
+});
+
+cancelFormBtn?.addEventListener("click", () => {
+  crmModal?.classList.add("hidden");
+  leadForm.reset();
+});
+
+closeModalBtn?.addEventListener("click", () => {
+  crmModal?.classList.add("hidden");
+  leadForm.reset();
+});
+
+crmModal?.querySelector(".crm-modal-overlay")?.addEventListener("click", () => {
+  crmModal?.classList.add("hidden");
+  leadForm.reset();
+});
+
 addSectionButton.addEventListener("click", () => {
   sections = [
     ...sections,
@@ -752,7 +811,8 @@ leadForm.addEventListener("submit", async (event) => {
     return;
   }
   await createLead(payload);
-  leadName.value = "";
+  leadForm.reset();
+  crmModal?.classList.add("hidden");
   leadPhone.value = "";
   leadNotes.value = "";
   leadStatus.value = "interested";

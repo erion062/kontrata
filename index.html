@@ -142,43 +142,86 @@
           <section class="script" id="scriptContainer"></section>
 
           <section id="notesPanel" class="notes hidden">
-            <div class="notes-header">
-              <div>
-                <p class="eyebrow">Notes</p>
-                <h2>Shenime nga klienti</h2>
-                <p class="notes-subtitle">Ruaj mendime, kerkesa ose follow-ups.</p>
+            <div class="notes-container">
+              <div class="notes-header">
+                <div class="notes-header-text">
+                  <p class="eyebrow">NOTES</p>
+                  <h2>Shenime nga klienti</h2>
+                  <p class="notes-subtitle">Ruaj mendime, kerkesa ose follow-ups.</p>
+                </div>
               </div>
-              <button id="saveNotes" class="primary" type="button">Ruaj</button>
+
+              <div class="notes-body">
+                <button id="toggleNotesBtn" class="notes-add-btn" type="button">
+                  <span class="notes-add-icon">+</span>
+                  <span>Shto shenime te reja</span>
+                </button>
+                <div id="notesDisplay" class="notes-display"></div>
+              </div>
             </div>
-            <textarea id="notesInput" class="notes-input" placeholder="Shkruaj shenimet ketu..."></textarea>
-            <div id="notesStatus" class="notes-status"></div>
+
+            <div id="notesModal" class="notes-modal hidden">
+              <div class="notes-modal-overlay"></div>
+              <div class="notes-modal-content">
+                <div class="notes-modal-header">
+                  <h3>Shto shenime</h3>
+                  <button id="closeNotesModalBtn" class="notes-modal-close" type="button">×</button>
+                </div>
+                <textarea id="notesInput" class="notes-input" placeholder="Shkruaj shenimet ketu..." rows="8"></textarea>
+                <div class="notes-form-footer">
+                  <button id="saveNotes" class="primary" type="button">Ruaj</button>
+                  <button id="cancelNotesBtn" class="ghost" type="button">Anulo</button>
+                </div>
+                <div id="notesStatus" class="notes-status"></div>
+              </div>
+            </div>
           </section>
 
           <section id="crmPanel" class="crm hidden">
-            <div class="crm-grid">
-              <div class="crm-left">
-                <div class="crm-header">
-                  <div>
-                    <p class="eyebrow">CRM</p>
-                    <h2>Kontaktet & Statusi</h2>
-                    <p class="crm-subtitle">Ruaj klientet, statusin dhe shenimet.</p>
+            <div class="crm-container">
+              <div class="crm-header">
+                <div class="crm-header-text">
+                  <p class="eyebrow">CRM</p>
+                  <h2>Kontaktet & Statusi</h2>
+                  <p class="crm-subtitle">Ruaj klientet, statusin dhe shenimet.</p>
+                </div>
+                <div class="crm-stats">
+                  <div class="crm-stat">
+                    <span>Interesuar</span>
+                    <strong id="countInterested">0</strong>
                   </div>
-                  <div class="crm-stats">
-                    <div class="crm-stat">
-                      <span>Interesuar</span>
-                      <strong id="countInterested">0</strong>
-                    </div>
-                    <div class="crm-stat">
-                      <span>Jo interesuar</span>
-                      <strong id="countNotInterested">0</strong>
-                    </div>
-                    <div class="crm-stat">
-                      <span>Ne pritje</span>
-                      <strong id="countFollow">0</strong>
-                    </div>
+                  <div class="crm-stat">
+                    <span>Jo interesuar</span>
+                    <strong id="countNotInterested">0</strong>
+                  </div>
+                  <div class="crm-stat">
+                    <span>Ne pritje</span>
+                    <strong id="countFollow">0</strong>
                   </div>
                 </div>
+              </div>
 
+              <div class="crm-body">
+                <div class="crm-add-section">
+                  <button id="toggleFormBtn" class="crm-add-btn" type="button">
+                    <span class="crm-add-icon">+</span>
+                    <span>Shto kontakt te ri</span>
+                  </button>
+                </div>
+
+                <div class="crm-list-wrapper">
+                  <div class="crm-list" id="crmList"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="crmModal" class="crm-modal hidden">
+              <div class="crm-modal-overlay"></div>
+              <div class="crm-modal-content">
+                <div class="crm-modal-header">
+                  <h3>Shto kontakt te ri</h3>
+                  <button id="closeModalBtn" class="crm-modal-close" type="button">×</button>
+                </div>
                 <form id="leadForm" class="crm-form">
                   <div class="crm-field">
                     <label>Emri</label>
@@ -187,10 +230,6 @@
                   <div class="crm-field">
                     <label>Numri</label>
                     <input id="leadPhone" type="text" placeholder="+383..." />
-                  </div>
-                  <div class="crm-field crm-field--full">
-                    <label>Shenime</label>
-                    <textarea id="leadNotes" placeholder="Detaje ose vërejtje"></textarea>
                   </div>
                   <div class="crm-field">
                     <label>Statusi</label>
@@ -201,15 +240,17 @@
                     </select>
                   </div>
                   <div class="crm-field">
-                    <button class="primary" type="submit">Shto kontakt</button>
-                    <span id="crmStatus" class="crm-status"></span>
+                    <label>Shenime</label>
+                    <textarea id="leadNotes" placeholder="Detaje ose vërejtje" rows="4"></textarea>
                   </div>
+                  <div class="crm-form-footer">
+                    <button class="primary" type="submit">Ruaj</button>
+                    <button id="cancelFormBtn" class="ghost" type="button">Anulo</button>
+                  </div>
+                  <span id="crmStatus" class="crm-status"></span>
                 </form>
               </div>
-
-              <div class="crm-right">
-                <div class="crm-list" id="crmList"></div>
-              </div>
+            </div>
             </div>
           </section>
         </main>
