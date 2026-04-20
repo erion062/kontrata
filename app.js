@@ -417,6 +417,13 @@ const setActiveTab = (tab) => {
   tabCrmButton.classList.toggle("active", isCrm);
   tabNotesButton.classList.toggle("active", isNotes);
   updateAddressBar(tab);
+  
+  if (isCrm) {
+    loadLeads();
+  }
+  if (isNotes) {
+    loadNotes();
+  }
 };
 
 const loadNotes = async () => {
