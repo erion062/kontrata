@@ -1320,6 +1320,38 @@ button.ghost:hover {
   flex-wrap: wrap;
 }
 
+.crm-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.crm-filter {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.1));
+  background: transparent;
+  color: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.crm-filter:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.crm-filter.active {
+  background: var(--accent, #222);
+  color: #fff;
+  border-color: var(--accent, #222);
+}
+
+.crm-stat[data-filter] {
+  cursor: pointer;
+}
+
 @media (max-width: 1024px) {
   .layout {
     grid-template-columns: 1fr;

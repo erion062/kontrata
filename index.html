@@ -186,18 +186,24 @@
                   <p class="crm-subtitle">Ruaj klientet, statusin dhe shenimet.</p>
                 </div>
                 <div class="crm-stats">
-                  <div class="crm-stat">
+                  <div class="crm-stat" data-filter="interested">
                     <span>Interesuar</span>
                     <strong id="countInterested">0</strong>
                   </div>
-                  <div class="crm-stat">
+                  <div class="crm-stat" data-filter="not_interested">
                     <span>Jo interesuar</span>
                     <strong id="countNotInterested">0</strong>
                   </div>
-                  <div class="crm-stat">
+                  <div class="crm-stat" data-filter="follow_up">
                     <span>Ne pritje</span>
                     <strong id="countFollow">0</strong>
                   </div>
+                </div>
+                <div class="crm-filters" id="crmFilters">
+                  <button type="button" class="crm-filter active" data-filter="all">Te gjithe</button>
+                  <button type="button" class="crm-filter" data-filter="interested">Interesuar</button>
+                  <button type="button" class="crm-filter" data-filter="not_interested">Jo interesuar</button>
+                  <button type="button" class="crm-filter" data-filter="follow_up">Ne pritje</button>
                 </div>
                 <button id="toggleFormBtn" class="crm-add-btn" type="button">
                   <span class="crm-add-icon">+</span>
@@ -214,7 +220,7 @@
               <div class="crm-modal-overlay"></div>
               <div class="crm-modal-content">
                 <div class="crm-modal-header">
-                  <h3>Shto kontakt te ri</h3>
+                  <h3 id="crmModalTitle">Shto kontakt te ri</h3>
                   <button id="closeModalBtn" class="crm-modal-close" type="button">×</button>
                 </div>
                 <form id="leadForm" class="crm-form">

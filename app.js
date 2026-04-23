@@ -164,10 +164,14 @@ const toggleFormBtn = document.getElementById("toggleFormBtn");
 const cancelFormBtn = document.getElementById("cancelFormBtn");
 const closeModalBtn = document.getElementById("closeModalBtn");
 const crmModal = document.getElementById("crmModal");
+const crmModalTitle = document.getElementById("crmModalTitle");
+const crmFilters = document.getElementById("crmFilters");
 
 let activeSectionIndex = 0;
 let activeLineIndex = 0;
 let leads = [];
+let crmFilter = "all";
+let editingLeadId = null;
 
 const buildNav = () => {
   sectionNav.innerHTML = "";
@@ -562,18 +566,25 @@ const updateCrmStats = () => {
 
 const renderLeads = () => {
   crmList.innerHTML = "";
-  if (leads.length === 0) {
+  updateCrmStats();
+
+  const visibleLeads = crmFilter === "all"
+    ? leads
+    : leads.filter((lead) => lead.status === crmFilter);
+
+  if (visibleLeads.length === 0) {
     const empty = document.createElement("p");
-    empty.textContent = "Nuk ka kontakte ende.";
+    empty.textContent = leads.length === 0
+      ? "Nuk ka kontakte ende."
+      : "Asnje kontakt me kete status.";
     empty.style.color = "var(--muted)";
     empty.style.textAlign = "center";
     empty.style.padding = "40px 20px";
     crmList.appendChild(empty);
-    updateCrmStats();
     return;
   }
 
-  leads.forEach((lead) => {
+  visibleLeads.forEach((lead) => {
     const card = document.createElement("div");
     card.className = "crm-card";
 
@@ -617,6 +628,13 @@ const renderLeads = () => {
     const actions = document.createElement("div");
     actions.className = "crm-actions";
 
+    const editButton = document.createElement("button");
+    editButton.className = "ghost";
+    editButton.textContent = "Edito";
+    editButton.style.padding = "8px 14px";
+    editButton.style.fontSize = "0.85rem";
+    editButton.addEventListener("click", () => openEditLead(lead));
+
     const deleteButton = document.createElement("button");
     deleteButton.className = "ghost";
     deleteButton.textContent = "Fshi";
@@ -627,6 +645,7 @@ const renderLeads = () => {
       await deleteLead(lead.id);
     });
 
+    actions.appendChild(editButton);
     actions.appendChild(deleteButton);
 
     card.appendChild(nameCol);
@@ -832,23 +851,53 @@ notesModal?.querySelector(".notes-modal-overlay")?.addEventListener("click", () 
   notesStatus.textContent = "";
 });
 
-toggleFormBtn?.addEventListener("click", () => {
+const closeCrmModal = () => {
+  crmModal?.classList.add("hidden");
+  leadForm.reset();
+  editingLeadId = null;
+  if (crmModalTitle) crmModalTitle.textContent = "Shto kontakt te ri";
+};
+
+const openCreateLead = () => {
+  editingLeadId = null;
+  leadForm.reset();
+  leadStatus.value = "interested";
+  if (crmModalTitle) crmModalTitle.textContent = "Shto kontakt te ri";
   crmModal?.classList.remove("hidden");
+};
+
+const openEditLead = (lead) => {
+  editingLeadId = lead.id;
+  leadName.value = lead.name || "";
+  leadPhone.value = lead.phone || "";
+  leadStatus.value = lead.status || "interested";
+  leadNotes.value = lead.notes || "";
+  if (crmModalTitle) crmModalTitle.textContent = "Edito kontaktin";
+  crmStatus.textContent = "";
+  crmModal?.classList.remove("hidden");
+};
+
+toggleFormBtn?.addEventListener("click", openCreateLead);
+cancelFormBtn?.addEventListener("click", closeCrmModal);
+closeModalBtn?.addEventListener("click", closeCrmModal);
+crmModal?.querySelector(".crm-modal-overlay")?.addEventListener("click", closeCrmModal);
+
+const setCrmFilter = (value) => {
+  crmFilter = value || "all";
+  if (crmFilters) {
+    crmFilters.querySelectorAll(".crm-filter").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.filter === crmFilter);
+    });
+  }
+  renderLeads();
+};
+
+crmFilters?.querySelectorAll(".crm-filter").forEach((btn) => {
+  btn.addEventListener("click", () => setCrmFilter(btn.dataset.filter));
 });
 
-cancelFormBtn?.addEventListener("click", () => {
-  crmModal?.classList.add("hidden");
-  leadForm.reset();
-});
-
-closeModalBtn?.addEventListener("click", () => {
-  crmModal?.classList.add("hidden");
-  leadForm.reset();
-});
-
-crmModal?.querySelector(".crm-modal-overlay")?.addEventListener("click", () => {
-  crmModal?.classList.add("hidden");
-  leadForm.reset();
+document.querySelectorAll(".crm-stat[data-filter]").forEach((stat) => {
+  stat.addEventListener("click", () => setCrmFilter(stat.dataset.filter));
 });
 
 addSectionButton.addEventListener("click", () => {
@@ -883,12 +932,12 @@ leadForm.addEventListener("submit", async (event) => {
     crmStatus.textContent = "Shkruaj emrin.";
     return;
   }
-  await createLead(payload);
-  leadForm.reset();
-  crmModal?.classList.add("hidden");
-  leadPhone.value = "";
-  leadNotes.value = "";
-  leadStatus.value = "interested";
+  if (editingLeadId) {
+    await updateLead({ id: editingLeadId, ...payload });
+  } else {
+    await createLead(payload);
+  }
+  closeCrmModal();
 });
 
 window.addEventListener("keydown", (event) => {
