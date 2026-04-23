@@ -155,6 +155,7 @@ const crmStatus = document.getElementById("crmStatus");
 const leadForm = document.getElementById("leadForm");
 const leadName = document.getElementById("leadName");
 const leadPhone = document.getElementById("leadPhone");
+const leadCity = document.getElementById("leadCity");
 const leadStatus = document.getElementById("leadStatus");
 const leadNotes = document.getElementById("leadNotes");
 const countInterested = document.getElementById("countInterested");
@@ -166,6 +167,7 @@ const closeModalBtn = document.getElementById("closeModalBtn");
 const crmModal = document.getElementById("crmModal");
 const crmModalTitle = document.getElementById("crmModalTitle");
 const crmFilters = document.getElementById("crmFilters");
+const cityStatsList = document.getElementById("cityStatsList");
 
 let activeSectionIndex = 0;
 let activeLineIndex = 0;
@@ -562,6 +564,39 @@ const updateCrmStats = () => {
   countInterested.textContent = interested;
   countNotInterested.textContent = notInterested;
   countFollow.textContent = follow;
+  renderCityStats();
+};
+
+const renderCityStats = () => {
+  if (!cityStatsList) return;
+  cityStatsList.innerHTML = "";
+
+  const counts = new Map();
+  leads.forEach((lead) => {
+    const city = (lead.city || "").trim() || "Pa qytet";
+    counts.set(city, (counts.get(city) || 0) + 1);
+  });
+
+  if (counts.size === 0) {
+    const empty = document.createElement("p");
+    empty.className = "crm-city-empty";
+    empty.textContent = "Asnje qytet ende.";
+    cityStatsList.appendChild(empty);
+    return;
+  }
+
+  const sorted = Array.from(counts.entries()).sort((a, b) => b[1] - a[1]);
+  sorted.forEach(([city, count]) => {
+    const row = document.createElement("div");
+    row.className = "crm-city-row";
+    const name = document.createElement("span");
+    name.textContent = city;
+    const value = document.createElement("strong");
+    value.textContent = count;
+    row.appendChild(name);
+    row.appendChild(value);
+    cityStatsList.appendChild(row);
+  });
 };
 
 const renderLeads = () => {
@@ -608,6 +643,16 @@ const renderLeads = () => {
     phoneCol.appendChild(phoneLabel);
     phoneCol.appendChild(phoneValue);
 
+    const cityCol = document.createElement("div");
+    cityCol.className = "crm-card-city";
+    const cityLabel = document.createElement("span");
+    cityLabel.className = "crm-card-label";
+    cityLabel.textContent = "QYTETI";
+    const cityValue = document.createElement("span");
+    cityValue.textContent = lead.city || "-";
+    cityCol.appendChild(cityLabel);
+    cityCol.appendChild(cityValue);
+
     const statusCol = document.createElement("div");
     statusCol.className = "crm-card-status";
     const pill = document.createElement("span");
@@ -650,6 +695,7 @@ const renderLeads = () => {
 
     card.appendChild(nameCol);
     card.appendChild(phoneCol);
+    card.appendChild(cityCol);
     card.appendChild(statusCol);
     card.appendChild(notesCol);
     card.appendChild(actions);
@@ -870,6 +916,7 @@ const openEditLead = (lead) => {
   editingLeadId = lead.id;
   leadName.value = lead.name || "";
   leadPhone.value = lead.phone || "";
+  leadCity.value = lead.city || "";
   leadStatus.value = lead.status || "interested";
   leadNotes.value = lead.notes || "";
   if (crmModalTitle) crmModalTitle.textContent = "Edito kontaktin";
@@ -925,6 +972,7 @@ leadForm.addEventListener("submit", async (event) => {
   const payload = {
     name: leadName.value.trim(),
     phone: leadPhone.value.trim(),
+    city: leadCity.value.trim(),
     status: leadStatus.value,
     notes: leadNotes.value.trim(),
   };

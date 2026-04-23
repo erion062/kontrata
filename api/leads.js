@@ -12,6 +12,7 @@ const ensureTable = async () => {
       updated_at TIMESTAMPTZ DEFAULT NOW()
     );
   `;
+  await sql`ALTER TABLE leads ADD COLUMN IF NOT EXISTS city TEXT;`;
 };
 
 const readBody = async (req) => {
@@ -42,7 +43,7 @@ module.exports = async (req, res) => {
 
   if (req.method === "GET") {
     const { rows } = await sql`
-      SELECT id, name, phone, status, notes, created_at, updated_at
+      SELECT id, name, phone, city, status, notes, created_at, updated_at
       FROM leads
       ORDER BY updated_at DESC;
     `;
@@ -52,7 +53,7 @@ module.exports = async (req, res) => {
 
   if (req.method === "POST") {
     const body = await readBody(req);
-    const { name, phone, status, notes } = body || {};
+    const { name, phone, city, status, notes } = body || {};
     if (!name || !status) {
       res.status(400).json({ error: "Missing fields" });
       return;
@@ -60,8 +61,8 @@ module.exports = async (req, res) => {
 
     const id = globalThis.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random()}`;
     await sql`
-      INSERT INTO leads (id, name, phone, status, notes)
-      VALUES (${id}, ${name}, ${phone ?? ""}, ${status}, ${notes ?? ""});
+      INSERT INTO leads (id, name, phone, city, status, notes)
+      VALUES (${id}, ${name}, ${phone ?? ""}, ${city ?? ""}, ${status}, ${notes ?? ""});
     `;
 
     res.status(200).json({ ok: true, id });
@@ -70,7 +71,7 @@ module.exports = async (req, res) => {
 
   if (req.method === "PUT") {
     const body = await readBody(req);
-    const { id, name, phone, status, notes } = body || {};
+    const { id, name, phone, city, status, notes } = body || {};
     if (!id) {
       res.status(400).json({ error: "Missing id" });
       return;
@@ -80,6 +81,7 @@ module.exports = async (req, res) => {
       UPDATE leads
       SET name = ${name ?? ""},
           phone = ${phone ?? ""},
+          city = ${city ?? ""},
           status = ${status ?? ""},
           notes = ${notes ?? ""},
           updated_at = NOW()

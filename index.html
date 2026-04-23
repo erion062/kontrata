@@ -84,7 +84,7 @@
               <div class="home-card" data-target="pitch">
                 <div class="home-icon">P</div>
                 <h2>Pitch</h2>
-                <p>Skript shume i shpejte per Zoom.</p>
+                <p>Skript shume i shpejte </p>
                 <button class="primary" type="button">Hap Pitch</button>
               </div>
               <div class="home-card" data-target="crm">
@@ -209,6 +209,10 @@
                   <span class="crm-add-icon">+</span>
                   <span>Shto kontakt te ri</span>
                 </button>
+                <div class="crm-city-stats">
+                  <h3 class="crm-city-stats-title">Statistika sipas qytetit</h3>
+                  <div id="cityStatsList" class="crm-city-stats-list"></div>
+                </div>
               </div>
 
               <div class="crm-main">
@@ -231,6 +235,10 @@
                   <div class="crm-field">
                     <label>Numri</label>
                     <input id="leadPhone" type="text" placeholder="+383..." />
+                  </div>
+                  <div class="crm-field">
+                    <label>Qyteti</label>
+                    <input id="leadCity" type="text" placeholder="p.sh. Prishtine" />
                   </div>
                   <div class="crm-field">
                     <label>Statusi</label>

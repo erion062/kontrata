@@ -1352,6 +1352,58 @@ button.ghost:hover {
   cursor: pointer;
 }
 
+.crm-city-stats {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border, rgba(0, 0, 0, 0.1));
+}
+
+.crm-city-stats-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted, #888);
+  margin: 0 0 12px 0;
+}
+
+.crm-city-stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.crm-city-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.03);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.crm-city-row:hover {
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.crm-city-row strong {
+  font-weight: 600;
+}
+
+.crm-city-empty {
+  color: var(--muted, #888);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.crm-card-city {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 @media (max-width: 1024px) {
   .layout {
     grid-template-columns: 1fr;
